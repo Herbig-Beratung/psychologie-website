@@ -10,15 +10,17 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-accent-light to-background py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <p className="text-secondary font-medium text-sm uppercase tracking-widest mb-4 animate-fade-in-up">
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2a2e1f] via-[#3a3528] to-[#3d4a3a]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary/10 to-transparent" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
+          <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up">
             Leistungen
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in-up-delay-1">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in-up-delay-1">
             Mein Angebot
           </h1>
-          <p className="text-lg text-muted max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
+          <p className="text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
             Von der individuellen MPU-Vorbereitung über psychologische
             Einzelberatung bis hin zu Workshops und Gefährdungsbeurteilungen für
             Unternehmen.

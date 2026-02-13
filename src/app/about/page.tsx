@@ -10,18 +10,20 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-primary-light to-background py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <p className="text-secondary font-medium text-sm uppercase tracking-widest mb-4 animate-fade-in-up">Über mich</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground animate-fade-in-up-delay-1">Lernen Sie mich kennen</h1>
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2a2e1f] via-[#3a3528] to-[#3d4a3a]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary/10 to-transparent" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
+          <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up">Über mich</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-white animate-fade-in-up-delay-1">Lernen Sie mich kennen</h1>
         </div>
       </section>
 
       <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-            <div className="sticky top-28">
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden relative">
+            <div className="sticky top-28 flex justify-center">
+              <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden relative ring-4 ring-primary-light">
                 <Image src="/lukas-herbig.png" alt="Lukas Herbig — Psychologe" fill className="object-cover object-top" priority />
               </div>
             </div>

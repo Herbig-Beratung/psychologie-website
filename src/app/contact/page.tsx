@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Kontakt",
@@ -8,11 +9,26 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-secondary-light to-background py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <p className="text-secondary font-medium text-sm uppercase tracking-widest mb-4 animate-fade-in-up">Kontakt</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in-up-delay-1">Sprechen Sie mich an</h1>
-          <p className="text-lg text-muted max-w-2xl leading-relaxed animate-fade-in-up-delay-2">Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Ich freue mich auf Ihre Nachricht.</p>
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2a2e1f] via-[#3a3528] to-[#3d4a3a]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary/10 to-transparent" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6 flex items-center justify-between">
+          <div>
+            <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up">Kontakt</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in-up-delay-1">Sprechen Sie mich an</h1>
+            <p className="text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Ich freue mich auf Ihre Nachricht.</p>
+          </div>
+          <div className="hidden md:block shrink-0">
+            <div className="w-72 h-72 rounded-full overflow-hidden relative ring-4 ring-white/20">
+              <Image
+                src="/lukas-herbig.png"
+                alt="Lukas Herbig"
+                fill
+                className="object-cover object-top"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -49,6 +65,18 @@ export default function ContactPage() {
                       <option value="mpu">MPU Beratung</option>
                       <option value="mentalhealth">Mentale Gesundheit & Leistungsfähigkeit</option>
                       <option value="unternehmen">Psychologie in Unternehmen</option>
+                      <optgroup label="Workshops — Privatpersonen">
+                        <option value="workshop-resilienz-stressbewaeltigung">Workshop: Resilienz & Stressbewältigung</option>
+                        <option value="workshop-mentale-leistungsfaehigkeit">Workshop: Mentale Leistungsfähigkeit</option>
+                        <option value="workshop-emotionale-intelligenz">Workshop: Emotionale Intelligenz & Beziehungsdynamiken</option>
+                        <option value="workshop-selbstwert-identitaet">Workshop: Selbstwert & Identität</option>
+                      </optgroup>
+                      <optgroup label="Workshops — Unternehmen">
+                        <option value="workshop-gesunde-fuehrung">Workshop: Gesunde Führung</option>
+                        <option value="workshop-resilienz-mitarbeitende">Workshop: Resilienz & Stressmanagement für Mitarbeitende</option>
+                        <option value="workshop-change-resilienz">Workshop: Change & Resilienz für Organisationen</option>
+                        <option value="workshop-mentale-gesundheit-praevention">Workshop: Mentale Gesundheit & Prävention</option>
+                      </optgroup>
                       <option value="erstgespraech">Allgemeines Erstgespräch</option>
                       <option value="sonstiges">Sonstiges</option>
                     </select>

@@ -4,15 +4,16 @@ export default function Footer() {
   return (
     <footer className="bg-primary-dark text-white">
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
-            <h3 className="text-lg font-semibold mb-4">
-              Beratung für mentale Gesundheit
+            <h3 className="text-lg font-semibold mb-2">
+              Psychologische Beratung
             </h3>
+            <p className="text-secondary text-sm font-medium mb-4">Lukas Herbig</p>
             <p className="text-white/70 text-sm leading-relaxed">
-              Psychologische Beratung für Einzelpersonen und Unternehmen.
-              MPU-Vorbereitung, psychische Gefährdungsbeurteilungen und
-              Workshops für mentale Gesundheit.
+              Psychologische Beratung und Online-Webinare für Privatpersonen und
+              Unternehmen — MPU-Vorbereitung, mentale Gesundheit, Resilienz und
+              gesunde Führung.
             </p>
           </div>
 
@@ -23,7 +24,28 @@ export default function Footer() {
                 { href: "/", label: "Home" },
                 { href: "/about", label: "Über mich" },
                 { href: "/services", label: "Leistungen" },
+                { href: "/workshops", label: "Workshops" },
                 { href: "/contact", label: "Kontakt" },
+                { href: "/blog", label: "Blog" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-white/70 text-sm hover:text-secondary transition-colors duration-200">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Themenbereiche</h3>
+            <ul className="space-y-2">
+              {[
+                { href: "/services#mpu", label: "MPU-Beratung" },
+                { href: "/services#mentale-gesundheit", label: "Mentale Gesundheit" },
+                { href: "/services#unternehmen", label: "Psychologie in Unternehmen" },
+                { href: "/workshops#privatpersonen", label: "Workshops Privatpersonen" },
+                { href: "/workshops#unternehmen", label: "Workshops Unternehmen" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-white/70 text-sm hover:text-secondary transition-colors duration-200">
@@ -62,7 +84,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/20 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/50">
-            &copy; {new Date().getFullYear()} Beratung für mentale Gesundheit — Lukas Herbig. Alle Rechte vorbehalten.
+            &copy; {new Date().getFullYear()} Psychologische Beratung — Lukas Herbig. Alle Rechte vorbehalten.
           </p>
           <div className="flex gap-6">
             <Link href="/impressum" className="text-xs text-white/50 hover:text-white/80 transition-colors">Impressum</Link>

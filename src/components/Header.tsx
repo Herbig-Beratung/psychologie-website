@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -8,6 +9,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "Über mich" },
   { href: "/services", label: "Leistungen" },
+  { href: "/workshops", label: "Workshops" },
   { href: "/contact", label: "Kontakt" },
 ];
 
@@ -18,13 +20,22 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex flex-col">
-          <span className="text-xl font-semibold text-primary-dark tracking-tight">
-            Psychologische Beratung
-          </span>
-          <span className="text-xs text-muted tracking-wide uppercase">
-            Lukas Herbig
-          </span>
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/lukas-herbig.png"
+            alt="Lukas Herbig"
+            width={32}
+            height={32}
+            className="w-8 h-8 rounded-full object-cover ring-1 ring-border"
+          />
+          <div className="flex flex-col">
+            <span className="text-xl font-semibold text-primary-dark tracking-tight">
+              Psychologische Beratung
+            </span>
+            <span className="text-xs text-muted tracking-wide uppercase">
+              Lukas Herbig
+            </span>
+          </div>
         </Link>
 
         <ul className="hidden md:flex items-center gap-8">

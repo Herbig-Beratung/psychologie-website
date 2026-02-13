@@ -53,8 +53,8 @@ export default function Home() {
       <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <p className="text-secondary font-medium text-sm uppercase tracking-widest mb-3">
-              Leistungen
+            <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
+              Themenbereiche
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Wie ich Sie unterstützen kann
@@ -174,8 +174,8 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             {/* Photo */}
-            <div className="animate-fade-in-up-delay-2">
-              <div className="aspect-[4/5] rounded-2xl overflow-hidden relative">
+            <div className="animate-fade-in-up-delay-2 flex justify-center">
+              <div className="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden relative ring-4 ring-primary-light">
                 <Image
                   src="/lukas-herbig.png"
                   alt="Lukas Herbig"
@@ -187,7 +187,7 @@ export default function Home() {
 
             {/* Text */}
             <div className="animate-fade-in-up-delay-3">
-              <p className="text-secondary font-medium text-sm uppercase tracking-widest mb-3">
+              <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
                 Über mich
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
@@ -223,6 +223,84 @@ export default function Home() {
                 </svg>
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Workshops Teaser */}
+      <section className="py-20 bg-primary-light">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
+              Online-Webinare
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Workshops buchen
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* B2C */}
+            <Link
+              href="/workshops#privatpersonen"
+              className="p-8 rounded-2xl bg-card border border-border hover:border-secondary/30 hover:shadow-md transition-all duration-300 group block"
+            >
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Für Privatpersonen</h3>
+              </div>
+              <ul className="space-y-3 mb-6">
+                {["Resilienz & Stressbewältigung", "Mentale Leistungsfähigkeit", "Emotionale Intelligenz & Beziehungsdynamiken", "Selbstwert & Identität"].map((title, i) => (
+                  <li key={i} className="flex items-center gap-2 text-sm text-muted">
+                    <svg className="w-4 h-4 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    {title}
+                  </li>
+                ))}
+              </ul>
+              <span className="inline-flex items-center text-secondary font-medium text-sm group-hover:text-secondary/80 transition-colors">
+                Workshops ansehen
+                <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
+
+            {/* B2B */}
+            <Link
+              href="/workshops#unternehmen"
+              className="p-8 rounded-2xl bg-card border border-border hover:border-secondary/30 hover:shadow-md transition-all duration-300 group block"
+            >
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Für Unternehmen</h3>
+              </div>
+              <ul className="space-y-3 mb-6">
+                {["Gesunde Führung", "Resilienz & Stressmanagement für Mitarbeitende", "Change & Resilienz für Organisationen", "Mentale Gesundheit & Prävention"].map((title, i) => (
+                  <li key={i} className="flex items-center gap-2 text-sm text-muted">
+                    <svg className="w-4 h-4 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    {title}
+                  </li>
+                ))}
+              </ul>
+              <span className="inline-flex items-center text-secondary font-medium text-sm group-hover:text-secondary/80 transition-colors">
+                Workshops ansehen
+                <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
           </div>
         </div>
       </section>
