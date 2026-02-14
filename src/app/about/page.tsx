@@ -22,8 +22,8 @@ export default function AboutPage() {
       <section className="py-12 md:py-20 bg-background">
         <div className="max-w-6xl mx-auto px-5 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
-            <div className="flex justify-center md:sticky md:top-28 self-start">
-              <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 rounded-full overflow-hidden relative ring-4 ring-primary-light">
+            <div className="flex justify-center md:sticky md:top-24 md:self-start">
+              <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden relative ring-4 ring-primary-light">
                 <Image src="/lukas-herbig.png" alt="Lukas Herbig — Psychologe" fill className="object-cover object-top" priority />
               </div>
             </div>
