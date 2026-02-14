@@ -43,10 +43,10 @@ export default async function BlogPostPage({ params }: PageProps) {
   return (
     <>
       {/* Header */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#2a2e1f] via-[#3a3528] to-[#3d4a3a]" />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary/10 to-transparent" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6">
+        <div className="relative z-10 max-w-4xl mx-auto px-5 sm:px-6">
           <Link
             href="/blog"
             className="inline-flex items-center text-white/60 hover:text-white text-sm mb-8 transition-colors"
@@ -76,16 +76,16 @@ export default async function BlogPostPage({ params }: PageProps) {
               {formatDate(post.date)}
             </span>
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight animate-fade-in-up">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white leading-tight animate-fade-in-up">
             {post.title}
           </h1>
         </div>
       </section>
 
       {/* Content */}
-      <section className="py-16 bg-background">
-        <article className="max-w-3xl mx-auto px-6">
-          <p className="text-lg text-muted leading-relaxed mb-8 font-medium border-l-4 border-secondary pl-6">
+      <section className="py-10 md:py-16 bg-background">
+        <article className="max-w-3xl mx-auto px-5 sm:px-6">
+          <p className="text-base md:text-lg text-muted leading-relaxed mb-6 md:mb-8 font-medium border-l-4 border-secondary pl-6">
             {post.excerpt}
           </p>
           {post.content.map((paragraph, index) => (
@@ -98,7 +98,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           ))}
 
           {/* CTA */}
-          <div className="mt-12 p-8 bg-primary-light rounded-2xl border border-border">
+          <div className="mt-12 p-5 md:p-8 bg-primary-light rounded-2xl border border-border">
             <h3 className="text-lg font-bold text-foreground mb-2">
               Haben Sie Fragen zu diesem Thema?
             </h3>

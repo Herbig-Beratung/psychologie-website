@@ -50,10 +50,10 @@ export default function CookieBanner() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 sm:p-6 animate-fade-in-up">
-      <div className="max-w-3xl mx-auto bg-card border border-border rounded-2xl shadow-xl p-5 sm:p-6">
-        <div className="mb-4">
-          <p className="text-sm text-foreground font-medium mb-2">Cookie-Einstellungen</p>
+    <div className="fixed bottom-0 left-0 right-0 z-50 p-3 sm:p-6 animate-fade-in-up">
+      <div className="max-w-3xl mx-auto bg-card border border-border rounded-2xl shadow-xl p-4 sm:p-6">
+        <div className="mb-3 sm:mb-4">
+          <p className="text-sm text-foreground font-medium mb-1 sm:mb-2">Cookie-Einstellungen</p>
           <p className="text-xs text-muted leading-relaxed">
             Diese Website verwendet technisch notwendige Cookies sowie optionale Analyse-Cookies, um die Nutzung der Website zu verstehen und zu verbessern. Weitere Informationen finden Sie in der{" "}
             <Link href="/datenschutz" className="text-secondary hover:text-secondary/80 underline transition-colors">

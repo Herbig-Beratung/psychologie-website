@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-black">
+      <section className="relative min-h-[70vh] md:min-h-[85vh] flex items-center overflow-hidden bg-black">
         {/* Background Image */}
         <Image
           src="/hero-bg.jpg"
@@ -17,30 +17,30 @@ export default function Home() {
         {/* Dark olive-brown overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#2a2e1f]/90 via-[#3a3528]/70 to-transparent" />
 
-        <div className="relative z-10 max-w-6xl mx-auto w-full px-6 py-24 md:py-36">
+        <div className="relative z-10 max-w-6xl mx-auto w-full px-5 sm:px-6 py-16 md:py-28 lg:py-36">
           <div className="max-w-2xl animate-fade-in-up">
-              <p className="text-white/70 font-medium text-sm uppercase tracking-widest mb-4">
+              <p className="text-white/70 font-medium text-xs sm:text-sm uppercase tracking-widest mb-3 md:mb-4">
                 Beratung für mentale Gesundheit
               </p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 md:mb-6">
                 Psychologische Beratung{" "}
                 <span className="text-primary-light">mit System</span>
               </h1>
-              <p className="text-lg text-white/80 leading-relaxed mb-10">
+              <p className="text-base md:text-lg text-white/80 leading-relaxed mb-6 md:mb-10">
                 Von der MPU-Vorbereitung über psychische Gefährdungsbeurteilungen
                 bis hin zu Workshops — ich unterstütze Einzelpersonen und
                 Unternehmen mit einem ganzheitlichen, systemischen Ansatz.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Link
                   href="/services#mpu"
-                  className="inline-flex items-center justify-center px-8 py-3.5 bg-secondary text-white font-medium rounded-lg hover:bg-secondary/90 transition-colors duration-200 text-base"
+                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-3.5 bg-secondary text-white font-medium rounded-lg hover:bg-secondary/90 transition-colors duration-200 text-sm sm:text-base"
                 >
                   MPU Beratung
                 </Link>
                 <Link
                   href="/services"
-                  className="inline-flex items-center justify-center px-8 py-3.5 border border-white/40 text-white font-medium rounded-lg hover:bg-white/10 transition-colors duration-200 text-base"
+                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-3.5 border border-white/40 text-white font-medium rounded-lg hover:bg-white/10 transition-colors duration-200 text-sm sm:text-base"
                 >
                   Weitere Leistungen
                 </Link>
@@ -50,18 +50,18 @@ export default function Home() {
       </section>
 
       {/* Services Preview */}
-      <section className="py-20 bg-background">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
+      <section className="py-12 md:py-20 bg-background">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="text-center mb-8 md:mb-14">
+            <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-2 md:mb-3">
               Themenbereiche
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
               Wie ich Sie unterstützen kann
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
             {[
               {
                 icon: (
@@ -130,12 +130,12 @@ export default function Home() {
               <Link
                 key={i}
                 href={service.href}
-                className="p-8 rounded-2xl bg-card border border-border hover:border-secondary/30 hover:shadow-md transition-all duration-300 group block"
+                className="p-5 md:p-8 rounded-2xl bg-card border border-border hover:border-secondary/30 hover:shadow-md transition-all duration-300 group block"
               >
-                <div className="w-12 h-12 rounded-lg bg-primary-light flex items-center justify-center text-primary mb-5 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary-light flex items-center justify-center text-primary mb-4 md:mb-5 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">
+                <h3 className="text-lg md:text-xl font-semibold text-foreground mb-2 md:mb-3">
                   {service.title}
                 </h3>
                 <p className="text-sm text-muted leading-relaxed">
@@ -145,7 +145,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-6 md:mt-10">
             <Link
               href="/services"
               className="inline-flex items-center text-secondary font-medium hover:text-secondary/80 transition-colors duration-200 group"
@@ -170,12 +170,12 @@ export default function Home() {
       </section>
 
       {/* About Teaser */}
-      <section className="py-20 bg-card">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <section className="py-12 md:py-20 bg-card">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Photo */}
             <div className="animate-fade-in-up-delay-2 flex justify-center">
-              <div className="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden relative ring-4 ring-primary-light">
+              <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden relative ring-4 ring-primary-light">
                 <Image
                   src="/lukas-herbig.png"
                   alt="Lukas Herbig"
@@ -190,15 +190,15 @@ export default function Home() {
               <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
                 Über mich
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 md:mb-6">
                 Lukas Herbig
               </h2>
-              <p className="text-muted leading-relaxed mb-4">
+              <p className="text-sm md:text-base text-muted leading-relaxed mb-3 md:mb-4">
                 Als Psychologe (M.Sc. Klinische Psychologie) verbinde ich
                 verschiedenste psychologische Methoden miteinander — mit einem
                 klaren Schwerpunkt auf dem systemischen Ansatz.
               </p>
-              <p className="text-muted leading-relaxed mb-8">
+              <p className="text-sm md:text-base text-muted leading-relaxed mb-6 md:mb-8">
                 Mein Angebot richtet sich an Einzelpersonen, die sich auf ihre
                 MPU vorbereiten möchten, sowie an Unternehmen, die in die
                 mentale Gesundheit ihrer Mitarbeitenden investieren.
@@ -228,32 +228,32 @@ export default function Home() {
       </section>
 
       {/* Workshops Teaser */}
-      <section className="py-20 bg-primary-light">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
+      <section className="py-12 md:py-20 bg-primary-light">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="text-center mb-8 md:mb-14">
+            <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-2 md:mb-3">
               Online-Webinare
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
               Workshops buchen
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
             {/* B2C */}
             <Link
               href="/workshops#privatpersonen"
-              className="p-8 rounded-2xl bg-card border border-border hover:border-secondary/30 hover:shadow-md transition-all duration-300 group block"
+              className="p-5 md:p-8 rounded-2xl bg-card border border-border hover:border-secondary/30 hover:shadow-md transition-all duration-300 group block"
             >
-              <div className="flex items-center gap-3 mb-5">
+              <div className="flex items-center gap-3 mb-4 md:mb-5">
                 <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-foreground">Für Privatpersonen</h3>
+                <h3 className="text-lg md:text-xl font-bold text-foreground">Für Privatpersonen</h3>
               </div>
-              <ul className="space-y-3 mb-6">
+              <ul className="space-y-2 md:space-y-3 mb-5 md:mb-6">
                 {["Resilienz & Stressbewältigung", "Mentale Leistungsfähigkeit", "Emotionale Intelligenz & Beziehungsdynamiken", "Selbstwert & Identität"].map((title, i) => (
                   <li key={i} className="flex items-center gap-2 text-sm text-muted">
                     <svg className="w-4 h-4 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -274,17 +274,17 @@ export default function Home() {
             {/* B2B */}
             <Link
               href="/workshops#unternehmen"
-              className="p-8 rounded-2xl bg-card border border-border hover:border-secondary/30 hover:shadow-md transition-all duration-300 group block"
+              className="p-5 md:p-8 rounded-2xl bg-card border border-border hover:border-secondary/30 hover:shadow-md transition-all duration-300 group block"
             >
-              <div className="flex items-center gap-3 mb-5">
+              <div className="flex items-center gap-3 mb-4 md:mb-5">
                 <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-foreground">Für Unternehmen</h3>
+                <h3 className="text-lg md:text-xl font-bold text-foreground">Für Unternehmen</h3>
               </div>
-              <ul className="space-y-3 mb-6">
+              <ul className="space-y-2 md:space-y-3 mb-5 md:mb-6">
                 {["Gesunde Führung", "Resilienz & Stressmanagement für Mitarbeitende", "Change & Resilienz für Organisationen", "Mentale Gesundheit & Prävention"].map((title, i) => (
                   <li key={i} className="flex items-center gap-2 text-sm text-muted">
                     <svg className="w-4 h-4 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -306,19 +306,19 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
+        <div className="max-w-3xl mx-auto px-5 sm:px-6 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">
             Der erste Schritt ist der wichtigste
           </h2>
-          <p className="text-white/80 text-lg leading-relaxed mb-10">
+          <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 md:mb-10">
             Ob MPU-Vorbereitung, Gefährdungsbeurteilung oder Workshop —
             kontaktieren Sie mich für ein unverbindliches Erstgespräch und wir
             finden die passende Lösung für Ihr Anliegen.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center px-8 py-3.5 bg-secondary text-white font-medium rounded-lg hover:bg-secondary/90 transition-colors duration-200 text-base"
+            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-3.5 bg-secondary text-white font-medium rounded-lg hover:bg-secondary/90 transition-colors duration-200 text-sm sm:text-base"
           >
             Jetzt Kontakt aufnehmen
           </Link>

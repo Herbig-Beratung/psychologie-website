@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#2a2e1f] via-[#3a3528] to-[#3d4a3a]" />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary/10 to-transparent" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6 flex items-center justify-between">
+        <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-6 flex items-center justify-between">
           <div>
             <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up">Kontakt</p>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in-up-delay-1">Sprechen Sie mich an</h1>
-            <p className="text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Ich freue mich auf Ihre Nachricht.</p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6 animate-fade-in-up-delay-1">Sprechen Sie mich an</h1>
+            <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Ich freue mich auf Ihre Nachricht.</p>
           </div>
           <div className="hidden md:block shrink-0">
             <div className="w-72 h-72 rounded-full overflow-hidden relative ring-4 ring-white/20">
@@ -33,15 +33,15 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-background">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-16">
+      <section className="py-12 md:py-20 bg-background">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16">
             <div className="lg:col-span-3">
               <ContactForm />
             </div>
 
             <div className="lg:col-span-2 space-y-8">
-              <div className="bg-card border border-border rounded-2xl p-8">
+              <div className="bg-card border border-border rounded-2xl p-5 md:p-8">
                 <h3 className="text-lg font-semibold text-foreground mb-4">Adresse & Kontakt</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -59,7 +59,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="bg-card border border-border rounded-2xl p-8">
+              <div className="bg-card border border-border rounded-2xl p-5 md:p-8">
                 <h3 className="text-lg font-semibold text-foreground mb-4">Sprechzeiten</h3>
                 <ul className="space-y-3 text-sm">
                   {[{ day: "Montag – Donnerstag", time: "09:00 – 18:00 Uhr" }, { day: "Freitag", time: "09:00 – 14:00 Uhr" }, { day: "Samstag – Sonntag", time: "Geschlossen" }].map((item, i) => (
@@ -71,7 +71,7 @@ export default function ContactPage() {
                 </ul>
               </div>
 
-              <div className="bg-secondary-light border border-secondary/15 rounded-2xl p-8">
+              <div className="bg-secondary-light border border-secondary/15 rounded-2xl p-5 md:p-8">
                 <h3 className="text-lg font-semibold text-foreground mb-3">Telefonische Erreichbarkeit</h3>
                 <p className="text-sm text-muted leading-relaxed">Sollte ich gerade in einer Sitzung sein, hinterlassen Sie bitte eine Nachricht auf dem Anrufbeantworter. Ich rufe Sie zeitnah zurück. Alternativ können Sie mir jederzeit eine E-Mail schreiben.</p>
               </div>

@@ -118,8 +118,8 @@ function WorkshopCard({
 }) {
   return (
     <div className="bg-card border border-border rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col">
-      <div className="p-6 flex-1 flex flex-col">
-        <h3 className="text-lg font-bold text-foreground mb-2">
+      <div className="p-4 md:p-6 flex-1 flex flex-col">
+        <h3 className="text-base md:text-lg font-bold text-foreground mb-2">
           {workshop.title}
         </h3>
         <p className="text-muted text-sm leading-relaxed mb-5">
@@ -178,17 +178,17 @@ export default function WorkshopsPage() {
   return (
     <>
       {/* Header */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#2a2e1f] via-[#3a3528] to-[#3d4a3a]" />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary/10 to-transparent" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
+        <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-6">
           <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up">
             Workshops
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in-up-delay-1">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6 animate-fade-in-up-delay-1">
             Online-Webinare
           </h1>
-          <p className="text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
+          <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
             Psychologisch fundierte Webinare für Privatpersonen und Unternehmen
             — interaktiv, praxisnah und direkt buchbar.
           </p>
@@ -196,9 +196,9 @@ export default function WorkshopsPage() {
       </section>
 
       {/* Format-Info */}
-      <section className="py-10 bg-primary-light border-b border-border">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-foreground">
+      <section className="py-6 md:py-10 bg-primary-light border-b border-border">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 text-sm text-foreground">
             <div className="flex items-center gap-2">
               <svg
                 className="w-5 h-5 text-secondary"
@@ -252,8 +252,8 @@ export default function WorkshopsPage() {
       </section>
 
       {/* B2C Workshops */}
-      <section id="privatpersonen" className="py-20 bg-background scroll-mt-24">
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="privatpersonen" className="py-12 md:py-20 bg-background scroll-mt-24">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
           <div className="mb-12">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
@@ -275,7 +275,7 @@ export default function WorkshopsPage() {
                 <p className="text-secondary text-sm font-medium uppercase tracking-wider">
                   Für Privatpersonen
                 </p>
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground">
                   Persönliche Entwicklung & mentale Gesundheit
                 </h2>
               </div>
@@ -285,7 +285,7 @@ export default function WorkshopsPage() {
               persönlich weiterentwickeln und neue Perspektiven gewinnen möchten.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
             {b2cWorkshops.map((ws) => (
               <WorkshopCard
                 key={ws.id}
@@ -298,8 +298,8 @@ export default function WorkshopsPage() {
       </section>
 
       {/* B2B Workshops */}
-      <section id="unternehmen" className="py-20 bg-card border-t border-border scroll-mt-24">
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="unternehmen" className="py-12 md:py-20 bg-card border-t border-border scroll-mt-24">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
           <div className="mb-12">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
@@ -321,7 +321,7 @@ export default function WorkshopsPage() {
                 <p className="text-secondary text-sm font-medium uppercase tracking-wider">
                   Für Unternehmen
                 </p>
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground">
                   Psychologie in der Organisation
                 </h2>
               </div>
@@ -332,7 +332,7 @@ export default function WorkshopsPage() {
               möchten.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
             {b2bWorkshops.map((ws) => (
               <WorkshopCard
                 key={ws.id}
@@ -345,12 +345,12 @@ export default function WorkshopsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
+        <div className="max-w-3xl mx-auto px-5 sm:px-6 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">
             Individuelles Webinar gewünscht?
           </h2>
-          <p className="text-white/80 text-lg leading-relaxed mb-10">
+          <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 md:mb-10">
             Sie haben ein spezifisches Thema oder besondere Anforderungen? Gerne
             konzipiere ich ein maßgeschneidertes Webinar für Sie oder Ihre
             Organisation.

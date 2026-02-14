@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-primary-dark text-white">
-      <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 py-10 md:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           <div>
             <h3 className="text-lg font-semibold mb-2">
               Psychologische Beratung
@@ -82,7 +82,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/20 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-white/20 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/50">
             &copy; {new Date().getFullYear()} Psychologische Beratung — Lukas Herbig. Alle Rechte vorbehalten.
           </p>

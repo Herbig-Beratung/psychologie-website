@@ -27,7 +27,7 @@ export default function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="bg-card border border-border rounded-2xl p-8 md:p-10">
+      <div className="bg-card border border-border rounded-2xl p-5 sm:p-8 md:p-10">
         <div className="text-center py-8">
           <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-6">
             <svg className="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,9 +50,9 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="bg-card border border-border rounded-2xl p-8 md:p-10">
-      <h2 className="text-2xl font-bold text-foreground mb-2">Nachricht senden</h2>
-      <p className="text-muted text-sm mb-8">Füllen Sie das Formular aus und ich melde mich zeitnah bei Ihnen zurück.</p>
+    <div className="bg-card border border-border rounded-2xl p-5 sm:p-8 md:p-10">
+      <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-2">Nachricht senden</h2>
+      <p className="text-muted text-sm mb-5 md:mb-8">Füllen Sie das Formular aus und ich melde mich zeitnah bei Ihnen zurück.</p>
 
       {status === "error" && errorMessage && (
         <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
@@ -60,28 +60,28 @@ export default function ContactForm() {
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="space-y-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
           <div>
             <label htmlFor="firstName" className="block text-sm font-medium text-foreground mb-2">Vorname *</label>
-            <input type="text" id="firstName" name="firstName" required className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary transition-colors" placeholder="Ihr Vorname" />
+            <input type="text" id="firstName" name="firstName" required className="w-full px-4 py-2.5 md:py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary transition-colors" placeholder="Ihr Vorname" />
           </div>
           <div>
             <label htmlFor="lastName" className="block text-sm font-medium text-foreground mb-2">Nachname *</label>
-            <input type="text" id="lastName" name="lastName" required className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary transition-colors" placeholder="Ihr Nachname" />
+            <input type="text" id="lastName" name="lastName" required className="w-full px-4 py-2.5 md:py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary transition-colors" placeholder="Ihr Nachname" />
           </div>
         </div>
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">E-Mail *</label>
-          <input type="email" id="email" name="email" required className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary transition-colors" placeholder="ihre.email@beispiel.de" />
+          <input type="email" id="email" name="email" required className="w-full px-4 py-2.5 md:py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary transition-colors" placeholder="ihre.email@beispiel.de" />
         </div>
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">Telefon</label>
-          <input type="tel" id="phone" name="phone" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary transition-colors" placeholder="+49 ..." />
+          <input type="tel" id="phone" name="phone" className="w-full px-4 py-2.5 md:py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary transition-colors" placeholder="+49 ..." />
         </div>
         <div>
           <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">Betreff *</label>
-          <select id="subject" name="subject" required className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary transition-colors">
+          <select id="subject" name="subject" required className="w-full px-4 py-2.5 md:py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary transition-colors">
             <option value="">Bitte wählen...</option>
             <option value="mpu">MPU Beratung</option>
             <option value="mentalhealth">Mentale Gesundheit & Leistungsfähigkeit</option>
@@ -104,7 +104,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">Ihre Nachricht *</label>
-          <textarea id="message" name="message" required rows={5} className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary transition-colors resize-y" placeholder="Beschreiben Sie kurz Ihr Anliegen..." />
+          <textarea id="message" name="message" required rows={4} className="w-full px-4 py-2.5 md:py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary transition-colors resize-y" placeholder="Beschreiben Sie kurz Ihr Anliegen..." />
         </div>
         <div className="flex items-start gap-3">
           <input type="checkbox" id="privacy" name="privacy" required className="mt-1 w-4 h-4 rounded border-border text-secondary focus:ring-secondary/30" />

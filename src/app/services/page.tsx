@@ -10,17 +10,17 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#2a2e1f] via-[#3a3528] to-[#3d4a3a]" />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary/10 to-transparent" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
+        <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-6">
           <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up">
             Leistungen
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in-up-delay-1">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6 animate-fade-in-up-delay-1">
             Mein Angebot
           </h1>
-          <p className="text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
+          <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
             Von der individuellen MPU-Vorbereitung über psychologische
             Einzelberatung bis hin zu Workshops und Gefährdungsbeurteilungen für
             Unternehmen.
@@ -28,19 +28,19 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-background">
-        <div className="max-w-6xl mx-auto px-6 space-y-10">
+      <section className="py-12 md:py-20 bg-background">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6 space-y-10">
           {/* MPU Beratung */}
           <div
             id="mpu"
-            className="scroll-mt-24 bg-card border border-border rounded-2xl p-8 md:p-10 hover:shadow-lg transition-shadow duration-300"
+            className="scroll-mt-24 bg-card border border-border rounded-2xl p-5 sm:p-8 md:p-10 hover:shadow-lg transition-shadow duration-300"
           >
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-5 md:gap-8">
               <div className="flex-1">
                 <p className="text-secondary text-sm font-medium uppercase tracking-wider mb-2">
                   Für Einzelpersonen
                 </p>
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-3">
                   Verkehrspsychologische Beratung & MPU-Vorbereitung
                 </h2>
                 <p className="text-muted leading-relaxed mb-6">
@@ -106,14 +106,14 @@ export default function ServicesPage() {
           {/* Mentale Gesundheit */}
           <div
             id="mentale-gesundheit"
-            className="scroll-mt-24 bg-card border border-border rounded-2xl p-8 md:p-10 hover:shadow-lg transition-shadow duration-300"
+            className="scroll-mt-24 bg-card border border-border rounded-2xl p-5 sm:p-8 md:p-10 hover:shadow-lg transition-shadow duration-300"
           >
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-5 md:gap-8">
               <div className="flex-1">
                 <p className="text-secondary text-sm font-medium uppercase tracking-wider mb-2">
                   Für Einzelpersonen
                 </p>
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-3">
                   Mentale Gesundheit & Leistungsfähigkeit
                 </h2>
                 <p className="text-muted leading-relaxed mb-6">
@@ -179,14 +179,14 @@ export default function ServicesPage() {
           {/* Unternehmen */}
           <div
             id="unternehmen"
-            className="scroll-mt-24 bg-card border border-border rounded-2xl p-8 md:p-10 hover:shadow-lg transition-shadow duration-300"
+            className="scroll-mt-24 bg-card border border-border rounded-2xl p-5 sm:p-8 md:p-10 hover:shadow-lg transition-shadow duration-300"
           >
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-5 md:gap-8">
               <div className="flex-1">
                 <p className="text-secondary text-sm font-medium uppercase tracking-wider mb-2">
                   Für Unternehmen
                 </p>
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-3">
                   Psychologie in Unternehmen & Organisationen
                 </h2>
                 <p className="text-muted leading-relaxed mb-6">
@@ -252,12 +252,12 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
+        <div className="max-w-3xl mx-auto px-5 sm:px-6 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">
             Nicht sicher, welches Angebot passt?
           </h2>
-          <p className="text-white/80 text-lg leading-relaxed mb-10">
+          <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 md:mb-10">
             In einem unverbindlichen Erstgespräch klären wir gemeinsam, wie ich
             Sie am besten unterstützen kann.
           </p>

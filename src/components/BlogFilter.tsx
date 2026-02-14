@@ -30,15 +30,15 @@ export default function BlogFilter({ posts }: BlogFilterProps) {
     active === "Alle" ? posts : posts.filter((p) => p.category === active);
 
   return (
-    <section className="py-20 bg-background">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-12 md:py-20 bg-background">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6">
         {/* Filter Tabs */}
-        <div className="flex flex-wrap gap-3 mb-12">
+        <div className="flex flex-wrap gap-2 sm:gap-3 mb-8 md:mb-12">
           {categories.map((cat) => (
             <button
               key={cat.key}
               onClick={() => setActive(cat.key)}
-              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 ${
+              className={`px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 ${
                 active === cat.key
                   ? "bg-secondary text-white shadow-md"
                   : "bg-primary-light text-foreground hover:bg-border"
@@ -50,14 +50,14 @@ export default function BlogFilter({ posts }: BlogFilterProps) {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
           {filtered.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
               className="bg-card border border-border rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col"
             >
-              <div className="p-6 flex-1 flex flex-col">
+              <div className="p-4 sm:p-6 flex-1 flex flex-col">
                 <div className="flex items-center justify-between mb-4">
                   <span
                     className={`text-xs font-medium px-3 py-1 rounded-full ${post.categoryColor}`}

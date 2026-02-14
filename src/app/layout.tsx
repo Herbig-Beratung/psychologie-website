@@ -35,6 +35,10 @@ export const metadata: Metadata = {
     "Systemischer Ansatz",
     "Lukas Herbig",
   ],
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({

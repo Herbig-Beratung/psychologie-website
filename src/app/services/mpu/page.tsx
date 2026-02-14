@@ -11,10 +11,10 @@ export default function MpuPage() {
   return (
     <>
       {/* Header */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#2a2e1f] via-[#3a3528] to-[#3d4a3a]" />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary/10 to-transparent" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
+        <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-6">
           <Link
             href="/services"
             className="inline-flex items-center text-white/60 hover:text-white text-sm mb-8 transition-colors"
@@ -40,7 +40,7 @@ export default function MpuPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in-up-delay-1">
             Verkehrspsychologische Beratung & MPU-Vorbereitung
           </h1>
-          <p className="text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
+          <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
             Strukturierte, evidenzbasierte Vorbereitung auf die
             medizinisch-psychologische Untersuchung — mit Fokus auf Einsicht,
             Veränderung und nachhaltige Stabilität.
@@ -49,14 +49,14 @@ export default function MpuPage() {
       </section>
 
       {/* Überblick */}
-      <section className="py-20 bg-background">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+      <section className="py-12 md:py-20 bg-background">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
             <div>
               <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
                 Das Angebot
               </p>
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Was Sie erwartet
               </h2>
               <div className="space-y-4 text-muted leading-relaxed">
@@ -119,12 +119,12 @@ export default function MpuPage() {
       </section>
 
       {/* Beratungsinhalte */}
-      <section className="py-20 bg-card">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-12 md:py-20 bg-card">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
           <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
             Beratungsinhalte
           </p>
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-10">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-10">
             Was wir gemeinsam erarbeiten
           </h2>
 
@@ -170,14 +170,14 @@ export default function MpuPage() {
       </section>
 
       {/* Zusätzliche Leistungen */}
-      <section className="py-20 bg-background">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+      <section className="py-12 md:py-20 bg-background">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
             <div>
               <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
                 Rundum-Service
               </p>
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Mehr als nur Beratung
               </h2>
               <div className="space-y-4 text-muted leading-relaxed">
@@ -221,19 +221,19 @@ export default function MpuPage() {
       </section>
 
       {/* Preis & CTA */}
-      <section className="py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
+        <div className="max-w-3xl mx-auto px-5 sm:px-6 text-center">
           <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
             Komplettpaket
           </p>
-          <p className="text-5xl md:text-6xl font-bold mb-2">{"1.200 €"}</p>
+          <p className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2">{"1.200 €"}</p>
           <p className="text-white/60 text-sm mb-8">
             inkl. aller Sitzungen, Materialien & organisatorischer Begleitung
           </p>
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
             Bereit für den ersten Schritt?
           </h2>
-          <p className="text-white/80 text-lg leading-relaxed mb-10">
+          <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 md:mb-10">
             In einem unverbindlichen Erstgespräch klären wir Ihre individuelle
             Situation und ich berate Sie zum weiteren Vorgehen.
           </p>

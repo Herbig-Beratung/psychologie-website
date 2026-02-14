@@ -11,10 +11,10 @@ export default function MentaleGesundheitPage() {
   return (
     <>
       {/* Header */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#2a2e1f] via-[#3a3528] to-[#3d4a3a]" />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary/10 to-transparent" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
+        <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-6">
           <Link
             href="/services"
             className="inline-flex items-center text-white/60 hover:text-white text-sm mb-8 transition-colors"
@@ -37,10 +37,10 @@ export default function MentaleGesundheitPage() {
           <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up">
             Für Einzelpersonen
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in-up-delay-1">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6 animate-fade-in-up-delay-1">
             Mentale Gesundheit & Leistungsfähigkeit
           </h1>
-          <p className="text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
+          <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
             Psychologische Beratung zur Stärkung von Selbstregulation,
             Belastbarkeit und mentaler Klarheit — präventiv wie auch
             interventionsnah.
@@ -49,14 +49,14 @@ export default function MentaleGesundheitPage() {
       </section>
 
       {/* Für wen */}
-      <section className="py-20 bg-background">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+      <section className="py-12 md:py-20 bg-background">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
             <div>
               <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
                 Für wen
               </p>
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6">
                 An wen richtet sich das Angebot?
               </h2>
               <div className="space-y-4 text-muted leading-relaxed">
@@ -108,12 +108,12 @@ export default function MentaleGesundheitPage() {
       </section>
 
       {/* Themenfelder */}
-      <section className="py-20 bg-card">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-12 md:py-20 bg-card">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
           <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
             Themenfelder
           </p>
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-10">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-10">
             Womit ich Sie unterstützen kann
           </h2>
 
@@ -165,13 +165,13 @@ export default function MentaleGesundheitPage() {
       </section>
 
       {/* Ansatz */}
-      <section className="py-20 bg-background">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-12 md:py-20 bg-background">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
           <div className="max-w-3xl">
             <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
               Mein Ansatz
             </p>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6">
               Systemisch, evidenzbasiert, individuell
             </h2>
             <div className="space-y-4 text-muted leading-relaxed">
@@ -200,19 +200,19 @@ export default function MentaleGesundheitPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
+        <div className="max-w-3xl mx-auto px-5 sm:px-6 text-center">
           <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
             Individuell
           </p>
-          <p className="text-3xl md:text-4xl font-bold mb-2">Auf Anfrage</p>
+          <p className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">Auf Anfrage</p>
           <p className="text-white/60 text-sm mb-8">
             Individuelles Angebot, zugeschnitten auf Ihre Bedürfnisse und Ziele
           </p>
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
             Lassen Sie uns sprechen
           </h2>
-          <p className="text-white/80 text-lg leading-relaxed mb-10">
+          <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 md:mb-10">
             In einem unverbindlichen Erstgespräch klären wir gemeinsam, wie ich
             Sie am besten unterstützen kann — und ob die Beratung das Richtige
             für Sie ist.

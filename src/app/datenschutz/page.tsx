@@ -8,16 +8,16 @@ export const metadata: Metadata = {
 export default function DatenschutzPage() {
   return (
     <>
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#2a2e1f] via-[#3a3528] to-[#3d4a3a]" />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary/10 to-transparent" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-white animate-fade-in-up">Datenschutzerklärung</h1>
+        <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white animate-fade-in-up">Datenschutzerklärung</h1>
         </div>
       </section>
 
-      <section className="py-20 bg-background">
-        <div className="max-w-3xl mx-auto px-6">
+      <section className="py-12 md:py-20 bg-background">
+        <div className="max-w-3xl mx-auto px-5 sm:px-6">
           <div className="space-y-10 text-muted leading-relaxed">
             <div>
               <h2 className="text-xl font-bold text-foreground mb-4">Verantwortliche Stelle</h2>

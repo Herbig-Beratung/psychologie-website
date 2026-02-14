@@ -11,10 +11,10 @@ export default function UnternehmenPage() {
   return (
     <>
       {/* Header */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#2a2e1f] via-[#3a3528] to-[#3d4a3a]" />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary/10 to-transparent" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
+        <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-6">
           <Link
             href="/services"
             className="inline-flex items-center text-white/60 hover:text-white text-sm mb-8 transition-colors"
@@ -37,10 +37,10 @@ export default function UnternehmenPage() {
           <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up">
             Für Unternehmen
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in-up-delay-1">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6 animate-fade-in-up-delay-1">
             Psychologie in Unternehmen & Organisationen
           </h1>
-          <p className="text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
+          <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
             Psychologische Expertise für gesunde Führung, nachhaltige
             Leistungsfähigkeit und gesetzeskonforme Prävention psychischer
             Belastungen.
@@ -49,14 +49,14 @@ export default function UnternehmenPage() {
       </section>
 
       {/* Leistungsspektrum */}
-      <section className="py-20 bg-background">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+      <section className="py-12 md:py-20 bg-background">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
             <div>
               <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
                 Leistungsspektrum
               </p>
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Was ich für Ihre Organisation leiste
               </h2>
               <div className="space-y-4 text-muted leading-relaxed">
@@ -115,12 +115,12 @@ export default function UnternehmenPage() {
       </section>
 
       {/* Ablauf Gefährdungsbeurteilung */}
-      <section className="py-20 bg-card">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-12 md:py-20 bg-card">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
           <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
             Ablauf
           </p>
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-4">
             Psychische Gefährdungsbeurteilung — Schritt für Schritt
           </h2>
           <p className="text-muted leading-relaxed max-w-2xl mb-12">
@@ -167,14 +167,14 @@ export default function UnternehmenPage() {
       </section>
 
       {/* Gesetzlicher Rahmen */}
-      <section className="py-20 bg-background">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+      <section className="py-12 md:py-20 bg-background">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
             <div>
               <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
                 Gesetzlicher Rahmen
               </p>
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Rechtliche Grundlagen
               </h2>
               <div className="space-y-4 text-muted leading-relaxed">
@@ -223,7 +223,7 @@ export default function UnternehmenPage() {
 
       {/* Workshops Verweis */}
       <section className="py-16 bg-primary-light border-y border-border">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
               <h3 className="text-xl font-bold text-foreground mb-2">
@@ -249,19 +249,19 @@ export default function UnternehmenPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
+        <div className="max-w-3xl mx-auto px-5 sm:px-6 text-center">
           <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
             Individuell
           </p>
-          <p className="text-3xl md:text-4xl font-bold mb-2">Auf Anfrage</p>
+          <p className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">Auf Anfrage</p>
           <p className="text-white/60 text-sm mb-8">
             Maßgeschneidertes Angebot für Ihre Organisation
           </p>
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
             Lassen Sie uns über Ihre Organisation sprechen
           </h2>
-          <p className="text-white/80 text-lg leading-relaxed mb-10">
+          <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 md:mb-10">
             In einem unverbindlichen Erstgespräch klären wir den Bedarf Ihrer
             Organisation und ich erstelle Ihnen ein individuelles Angebot.
           </p>
