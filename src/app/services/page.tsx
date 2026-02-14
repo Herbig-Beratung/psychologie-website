@@ -93,6 +93,12 @@ export default function ServicesPage() {
                 >
                   Erstgespräch vereinbaren
                 </Link>
+                <Link
+                  href="/services/mpu"
+                  className="block w-full px-6 py-3 mt-3 border border-border text-foreground font-medium rounded-lg hover:bg-background transition-colors duration-200 text-sm"
+                >
+                  Mehr erfahren
+                </Link>
               </div>
             </div>
           </div>
@@ -160,6 +166,12 @@ export default function ServicesPage() {
                 >
                   Angebot anfragen
                 </Link>
+                <Link
+                  href="/services/mentale-gesundheit"
+                  className="block w-full px-6 py-3 mt-3 border border-border text-foreground font-medium rounded-lg hover:bg-background transition-colors duration-200 text-sm"
+                >
+                  Mehr erfahren
+                </Link>
               </div>
             </div>
           </div>
@@ -226,6 +238,12 @@ export default function ServicesPage() {
                   className="block w-full px-6 py-3 bg-secondary text-white font-medium rounded-lg hover:bg-secondary/90 transition-colors duration-200 text-sm"
                 >
                   Angebot anfragen
+                </Link>
+                <Link
+                  href="/services/unternehmen"
+                  className="block w-full px-6 py-3 mt-3 border border-border text-foreground font-medium rounded-lg hover:bg-background transition-colors duration-200 text-sm"
+                >
+                  Mehr erfahren
                 </Link>
               </div>
             </div>

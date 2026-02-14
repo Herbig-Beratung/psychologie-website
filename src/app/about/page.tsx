@@ -22,8 +22,8 @@ export default function AboutPage() {
       <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-            <div className="sticky top-28 flex justify-center">
-              <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden relative ring-4 ring-primary-light">
+            <div className="flex justify-center md:sticky md:top-28">
+              <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden relative ring-4 ring-primary-light">
                 <Image src="/lukas-herbig.png" alt="Lukas Herbig — Psychologe" fill className="object-cover object-top" priority />
               </div>
             </div>
@@ -42,7 +42,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="text-xl font-semibold text-foreground mb-4">Qualifikationen</h3>
                 <ul className="space-y-3">
-                  {["Master of Science in Klinischer Psychologie", "Schwerpunkt systemische Beratung und Therapie", "Verkehrspsychologische Beratung (MPU-Vorbereitung)", "Psychische Gefährdungsbeurteilung nach GDA-Leitlinien", "Workshop-Leitung: Mentale Gesundheit & Führung", "Fortlaufende Weiterbildungen in evidenzbasierten Verfahren"].map((item, i) => (
+                  {["Master of Science in Psychologie — Schwerpunkt Klinische Psychologie & Psychotherapie", "Mehrjährige Erfahrung in der verkehrspsychologischen Beratung (MPU-Vorbereitung)", "Fachkraft für psychische Gefährdungsbeurteilung (IHK-zertifiziert)", "Mehrjährige Erfahrung in der beruflichen Eignungsdiagnostik", "Workshop-Leitung & Beratung für Unternehmen — Führung, Resilienz & Prävention", "Fortlaufende Weiterbildungen in evidenzbasierten Verfahren"].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <svg className="w-5 h-5 text-secondary mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                       <span className="text-muted">{item}</span>

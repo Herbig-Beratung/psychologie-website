@@ -280,7 +280,7 @@ export default function WorkshopsPage() {
                 </h2>
               </div>
             </div>
-            <p className="text-muted leading-relaxed max-w-2xl ml-13">
+            <p className="text-muted leading-relaxed max-w-2xl md:ml-13">
               Webinare für alle, die ihre psychische Gesundheit stärken, sich
               persönlich weiterentwickeln und neue Perspektiven gewinnen möchten.
             </p>
@@ -326,7 +326,7 @@ export default function WorkshopsPage() {
                 </h2>
               </div>
             </div>
-            <p className="text-muted leading-relaxed max-w-2xl ml-13">
+            <p className="text-muted leading-relaxed max-w-2xl md:ml-13">
               Webinare für Unternehmen, die in die psychische Gesundheit ihrer
               Mitarbeitenden investieren und eine gesunde Arbeitskultur fördern
               möchten.

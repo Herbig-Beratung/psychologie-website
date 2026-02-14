@@ -29,10 +29,10 @@ export default function Header() {
             className="w-8 h-8 rounded-full object-cover ring-1 ring-border"
           />
           <div className="flex flex-col">
-            <span className="text-xl font-semibold text-primary-dark tracking-tight">
+            <span className="text-base sm:text-xl font-semibold text-primary-dark tracking-tight">
               Psychologische Beratung
             </span>
-            <span className="text-xs text-muted tracking-wide uppercase">
+            <span className="text-[10px] sm:text-xs text-muted tracking-wide uppercase">
               Lukas Herbig
             </span>
           </div>

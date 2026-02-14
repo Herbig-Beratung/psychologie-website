@@ -33,16 +33,16 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/contact"
+                  href="/services#mpu"
                   className="inline-flex items-center justify-center px-8 py-3.5 bg-secondary text-white font-medium rounded-lg hover:bg-secondary/90 transition-colors duration-200 text-base"
                 >
-                  Beratungsgespräch vereinbaren
+                  MPU Beratung
                 </Link>
                 <Link
                   href="/services"
                   className="inline-flex items-center justify-center px-8 py-3.5 border border-white/40 text-white font-medium rounded-lg hover:bg-white/10 transition-colors duration-200 text-base"
                 >
-                  Meine Leistungen
+                  Weitere Leistungen
                 </Link>
               </div>
           </div>
@@ -175,7 +175,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             {/* Photo */}
             <div className="animate-fade-in-up-delay-2 flex justify-center">
-              <div className="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden relative ring-4 ring-primary-light">
+              <div className="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden relative ring-4 ring-primary-light">
                 <Image
                   src="/lukas-herbig.png"
                   alt="Lukas Herbig"

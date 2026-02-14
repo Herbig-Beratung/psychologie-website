@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary-dark text-white">
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <h3 className="text-lg font-semibold mb-2">
               Psychologische Beratung
