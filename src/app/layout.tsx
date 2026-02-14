@@ -19,10 +19,13 @@ const geistMono = Geist_Mono({
 
 
 
+const siteUrl = "https://herbig-beratung.de";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Beratung für mentale Gesundheit | Lukas Herbig",
-    template: "%s | Beratung für mentale Gesundheit — Lukas Herbig",
+    default: "Psychologische Beratung | Lukas Herbig",
+    template: "%s | Psychologische Beratung — Lukas Herbig",
   },
   description:
     "Professionelle psychologische Beratung: MPU-Vorbereitung, psychische Gefährdungsbeurteilungen für Unternehmen und Workshops für mentale Gesundheit.",
@@ -38,6 +41,30 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.png",
     apple: "/apple-icon.png",
+  },
+  openGraph: {
+    type: "website",
+    locale: "de_DE",
+    url: siteUrl,
+    siteName: "Psychologische Beratung — Lukas Herbig",
+    title: "Psychologische Beratung | Lukas Herbig",
+    description:
+      "MPU-Vorbereitung, mentale Gesundheit & Workshops — professionelle psychologische Beratung mit systemischem Ansatz.",
+    images: [
+      {
+        url: `${siteUrl}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "Psychologische Beratung — Lukas Herbig",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Psychologische Beratung | Lukas Herbig",
+    description:
+      "MPU-Vorbereitung, mentale Gesundheit & Workshops — professionelle psychologische Beratung mit systemischem Ansatz.",
+    images: [`${siteUrl}/og-image.png`],
   },
 };
 
