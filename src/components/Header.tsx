@@ -24,9 +24,9 @@ export default function Header() {
           <Image
             src="/lukas-herbig.png"
             alt="Lukas Herbig"
-            width={32}
-            height={32}
-            className="w-8 h-8 rounded-full object-cover ring-1 ring-border"
+            width={40}
+            height={40}
+            className="w-10 h-10 rounded-full object-cover ring-1 ring-border"
           />
           <div className="flex flex-col">
             <span className="text-base sm:text-xl font-semibold text-primary-dark tracking-tight">
