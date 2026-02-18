@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export default function FloatingMpuCta() {
   return (
-    <div className="fixed bottom-5 right-5 sm:bottom-8 sm:right-8 z-50 flex items-end gap-3">
-      {/* Text Card */}
-      <div className="bg-card border border-border rounded-2xl shadow-2xl p-4 sm:p-5 w-56 sm:w-64">
+    <div className="fixed bottom-5 right-5 sm:bottom-8 sm:right-8 z-50 flex items-end gap-0">
+      {/* Speech Bubble */}
+      <div className="relative bg-card border border-border rounded-2xl shadow-2xl p-4 sm:p-5 w-56 sm:w-64 mr-[-6px]">
         <p className="text-xs text-secondary font-semibold uppercase tracking-wider mb-1">
           Kurz & unverbindlich
         </p>
@@ -28,16 +28,22 @@ export default function FloatingMpuCta() {
         <p className="text-[11px] text-muted text-center mt-1.5">
           +49 176 72229459
         </p>
+
+        {/* Arrow pointing right */}
+        <div className="absolute top-1/2 -right-[7px] -translate-y-1/2">
+          <div className="w-3.5 h-3.5 bg-card border-r border-t border-border rotate-45" />
+        </div>
       </div>
 
       {/* Avatar */}
-      <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden ring-3 ring-secondary shadow-lg shrink-0">
+      <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden ring-3 ring-secondary shadow-lg shrink-0 z-10">
         <Image
           src="/lukas-cta.png"
           alt="Lukas Herbig"
-          width={96}
-          height={96}
-          className="w-full h-full object-cover object-top"
+          fill
+          sizes="96px"
+          quality={95}
+          className="object-cover object-top scale-[1.15]"
         />
       </div>
     </div>
