@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import FloatingMpuCta from "@/components/FloatingMpuCta";
+
 
 export const metadata: Metadata = {
   title: "MPU Beratung — Verkehrspsychologische Beratung & MPU-Vorbereitung",
@@ -255,8 +255,6 @@ export default function MpuPage() {
           </Link>
         </div>
       </section>
-
-      <FloatingMpuCta />
     </>
   );
 }

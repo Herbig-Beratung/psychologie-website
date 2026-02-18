@@ -6,6 +6,7 @@ import { Suspense } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
+import FloatingMpuCta from "@/components/FloatingMpuCta";
 import Providers from "@/app/providers";
 
 const geistSans = Geist({
@@ -111,6 +112,7 @@ export default function RootLayout({
             <Header />
             <main className="min-h-screen">{children}</main>
             <Footer />
+            <FloatingMpuCta />
             <CookieBanner />
           </Providers>
         </Suspense>
