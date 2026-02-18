@@ -1,11 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { sendContactEmail } from "@/app/actions/contact";
+
+declare global {
+  interface Window {
+    gtag_report_conversion?: (url?: string) => boolean;
+  }
+}
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const conversionFired = useRef(false);
+
+  function fireConversion() {
+    if (conversionFired.current) return;
+    if (typeof window.gtag_report_conversion === "function") {
+      window.gtag_report_conversion();
+      conversionFired.current = true;
+      if (process.env.NODE_ENV === "development") {
+        console.log("Google Ads conversion fired");
+      }
+    }
+  }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -19,6 +37,7 @@ export default function ContactForm() {
     if (result.success) {
       setStatus("success");
       (e.target as HTMLFormElement).reset();
+      fireConversion();
     } else {
       setStatus("error");
       setErrorMessage(result.error);

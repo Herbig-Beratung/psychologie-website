@@ -87,6 +87,19 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-16671563154');
+
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                'send_to': 'AW-16671563154/kz_OCMiE2_obEJK7z40-',
+                'event_callback': callback
+              });
+              return false;
+            }
           `}
         </Script>
       </head>
