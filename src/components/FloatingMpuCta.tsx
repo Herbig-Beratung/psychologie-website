@@ -11,7 +11,7 @@ export default function FloatingMpuCta() {
     <div className="fixed right-5 sm:right-8 top-[32%] z-50 flex items-end gap-3">
       {/* Speech Bubble */}
       {!minimized && (
-        <div className="relative bg-card border border-border rounded-2xl shadow-2xl p-4 sm:p-5 w-56 sm:w-64 animate-fade-in-up">
+        <div className="relative bg-card border border-border rounded-2xl shadow-2xl p-3.5 sm:p-4 w-52 sm:w-56 animate-fade-in-up">
           <button
             onClick={() => setMinimized(true)}
             className="absolute top-2.5 right-2.5 w-6 h-6 flex items-center justify-center rounded-full text-muted hover:text-foreground hover:bg-background/80 transition-colors"
@@ -22,15 +22,9 @@ export default function FloatingMpuCta() {
             </svg>
           </button>
 
-          <p className="text-xs text-secondary font-semibold uppercase tracking-wider mb-1">
-            Kurz & unverbindlich
-          </p>
           <h3 className="text-sm sm:text-base font-bold text-foreground mb-2 pr-5">
             Kostenloses Erstgespräch
           </h3>
-          <p className="text-xs sm:text-sm text-muted mb-3">
-            Ich berate Sie gerne telefonisch zu Ihrer MPU-Vorbereitung.
-          </p>
           <a
             href="tel:+4917672229459"
             className="flex items-center gap-2 w-full px-4 py-2.5 bg-secondary text-white text-sm font-medium rounded-lg hover:bg-secondary/90 transition-colors duration-200 justify-center"

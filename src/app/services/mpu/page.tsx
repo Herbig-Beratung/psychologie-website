@@ -62,6 +62,15 @@ export default function MpuPage() {
               </h2>
               <div className="space-y-4 text-muted leading-relaxed">
                 <p>
+                  Meine Beratung richtet sich an alle, die eine{" "}
+                  <strong className="text-foreground">MPU-Anordnung</strong> erhalten haben — ob wegen{" "}
+                  <strong className="text-foreground">Alkohol, Drogen, Punkten</strong> oder im Zusammenhang
+                  mit dem{" "}
+                  <strong className="text-foreground">Personenbeförderungsschein (P-Schein)</strong>.
+                  Unabhängig vom Anlass begleite ich Sie strukturiert und individuell
+                  durch den gesamten Vorbereitungsprozess.
+                </p>
+                <p>
                   Die verkehrspsychologische Beratung umfasst je nach
                   individuellem Fall <strong className="text-foreground">4 bis 8 Stunden</strong> intensive
                   Einzelberatung. Gemeinsam erarbeiten wir die Grundlagen für
