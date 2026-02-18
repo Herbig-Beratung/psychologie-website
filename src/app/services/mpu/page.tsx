@@ -39,7 +39,7 @@ export default function MpuPage() {
             Für Einzelpersonen
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in-up-delay-1">
-            Verkehrspsychologische Beratung & MPU-Vorbereitung
+            Verkehrspsychologische Beratung &<br />MPU-Vorbereitung
           </h1>
           <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
             Strukturierte, evidenzbasierte Vorbereitung auf die
