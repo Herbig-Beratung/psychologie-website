@@ -3,9 +3,9 @@ import Link from "next/link";
 
 
 export const metadata: Metadata = {
-  title: "MPU Beratung — Verkehrspsychologische Beratung & MPU-Vorbereitung",
+  title: "MPU Beratung Berlin — Verkehrspsychologische Beratung & MPU-Vorbereitung",
   description:
-    "Strukturierte, evidenzbasierte MPU-Vorbereitung mit 4–8 Stunden verkehrspsychologischer Beratung. Online oder in Präsenz in Berlin. Komplettpaket für 1.200 €.",
+    "MPU Beratung in Berlin: Strukturierte, evidenzbasierte MPU-Vorbereitung mit 4–8 Stunden verkehrspsychologischer Beratung. Alkohol, Drogen, Punkte & P-Schein. Online oder in Präsenz in Berlin Mitte & Neukölln. Komplettpaket 1.200 €.",
 };
 
 export default function MpuPage() {
@@ -42,9 +42,9 @@ export default function MpuPage() {
             Verkehrspsychologische Beratung &<br className="hidden md:block" />{" "}MPU-Vorbereitung
           </h1>
           <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
-            Strukturierte, evidenzbasierte Vorbereitung auf die
-            medizinisch-psychologische Untersuchung — mit Fokus auf Einsicht,
-            Veränderung und nachhaltige Stabilität.
+            Strukturierte, evidenzbasierte MPU-Vorbereitung in Berlin — mit Fokus auf Einsicht,
+            Veränderung und nachhaltige Stabilität. Beratung in Berlin Mitte,
+            Neukölln oder online.
           </p>
         </div>
       </section>

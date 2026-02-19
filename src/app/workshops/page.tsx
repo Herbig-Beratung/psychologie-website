@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Workshops",
+  title: "Workshops — Psychologische Online-Webinare Berlin",
   description:
-    "Online-Webinare für Privatpersonen und Unternehmen — Resilienz, Stressbewältigung, Gesunde Führung und mehr. Psychologisch fundiert von Lukas Herbig.",
+    "Psychologische Workshops und Online-Webinare von Lukas Herbig in Berlin: Resilienz, Stressbewältigung, Gesunde Führung, mentale Leistungsfähigkeit. Für Privatpersonen und Unternehmen.",
 };
 
 const b2cWorkshops = [

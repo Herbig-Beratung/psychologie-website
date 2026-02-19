@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Leistungen",
+  title: "Leistungen — Psychologische Beratung Berlin",
   description:
-    "MPU-Beratung, psychische Gefährdungsbeurteilungen für Unternehmen und Workshops für mentale Gesundheit — Lukas Herbig.",
+    "MPU-Beratung Berlin, psychische Gefährdungsbeurteilungen für Unternehmen und Workshops für mentale Gesundheit. Psychologe Lukas Herbig in Berlin.",
 };
 
 export default function ServicesPage() {
@@ -21,9 +21,9 @@ export default function ServicesPage() {
             Mein Angebot
           </h1>
           <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
-            Von der individuellen MPU-Vorbereitung über psychologische
+            Von der individuellen MPU-Vorbereitung in Berlin über psychologische
             Einzelberatung bis hin zu Workshops und Gefährdungsbeurteilungen für
-            Unternehmen.
+            Unternehmen — alles aus einer Hand.
           </p>
         </div>
       </section>
@@ -44,9 +44,9 @@ export default function ServicesPage() {
                   Verkehrspsychologische Beratung & MPU-Vorbereitung
                 </h2>
                 <p className="text-muted leading-relaxed mb-6">
-                  Strukturierte, evidenzbasierte Vorbereitung auf die
-                  medizinisch-psychologische Untersuchung — mit Fokus auf
-                  Einsicht, Veränderung und nachhaltige Stabilität.
+                  Strukturierte, evidenzbasierte MPU-Vorbereitung in Berlin — mit Fokus auf
+                  Einsicht, Veränderung und nachhaltige Stabilität. Beratung in
+                  Berlin Mitte, Neukölln oder online.
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
                   {[

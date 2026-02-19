@@ -3,8 +3,8 @@ import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Kontakt",
-  description: "Nehmen Sie Kontakt auf und vereinbaren Sie ein unverbindliches Erstgespräch. Beratung für mentale Gesundheit — Lukas Herbig.",
+  title: "Kontakt — Psychologische Beratung Berlin",
+  description: "Kontaktieren Sie Psychologe Lukas Herbig in Berlin für ein unverbindliches Erstgespräch. MPU Beratung, Workshops & psychologische Beratung in Berlin Mitte & Neukölln.",
 };
 
 export default function ContactPage() {

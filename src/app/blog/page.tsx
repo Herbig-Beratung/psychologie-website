@@ -3,9 +3,9 @@ import { blogPosts } from "@/data/blog-posts";
 import BlogFilter from "@/components/BlogFilter";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Blog — Psychologische Beratung Berlin",
   description:
-    "Artikel und Einblicke zu MPU-Vorbereitung, mentaler Gesundheit, Resilienz und gesunder F\u00fchrung \u2014 von Psychologe Lukas Herbig.",
+    "Artikel und Einblicke zu MPU-Vorbereitung, mentaler Gesundheit, Resilienz und gesunder Führung — von Psychologe Lukas Herbig in Berlin.",
 };
 
 export default function BlogPage() {

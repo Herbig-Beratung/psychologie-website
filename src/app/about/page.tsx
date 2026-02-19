@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Über mich",
-  description: "Erfahren Sie mehr über Lukas Herbig — Klinischer Psychologe (M.Sc.) mit systemischem Schwerpunkt.",
+  title: "Über mich — Psychologe Lukas Herbig in Berlin",
+  description: "Psychologe Lukas Herbig (M.Sc. Klinische Psychologie) in Berlin — systemischer Ansatz, MPU-Beratung, Workshops und psychische Gefährdungsbeurteilungen. Praxis in Berlin Mitte & Neukölln.",
 };
 
 export default function AboutPage() {

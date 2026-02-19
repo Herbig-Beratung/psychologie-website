@@ -26,19 +26,24 @@ const siteUrl = "https://herbig-beratung.de";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Psychologische Beratung | Lukas Herbig",
-    template: "%s | Psychologische Beratung — Lukas Herbig",
+    default: "Psychologische Beratung Berlin | MPU Beratung & Workshops — Lukas Herbig",
+    template: "%s | Psychologische Beratung Berlin — Lukas Herbig",
   },
   description:
-    "Professionelle psychologische Beratung: MPU-Vorbereitung, psychische Gefährdungsbeurteilungen für Unternehmen und Workshops für mentale Gesundheit.",
+    "Psychologische Beratung in Berlin: MPU-Vorbereitung, verkehrspsychologische Beratung, psychische Gefährdungsbeurteilungen und Workshops für mentale Gesundheit. Praxis in Berlin Mitte & Neukölln.",
   keywords: [
-    "MPU Beratung",
-    "Psychische Gefährdungsbeurteilung",
-    "Workshops mentale Gesundheit",
-    "Verkehrspsychologie",
-    "Klinische Psychologie",
+    "MPU Beratung Berlin",
+    "MPU Vorbereitung Berlin",
+    "Verkehrspsychologische Beratung Berlin",
+    "Psychologische Beratung Berlin",
+    "Psychische Gefährdungsbeurteilung Berlin",
+    "Workshops mentale Gesundheit Berlin",
+    "Verkehrspsychologie Berlin",
+    "Klinische Psychologie Berlin",
     "Systemischer Ansatz",
-    "Lukas Herbig",
+    "Lukas Herbig Berlin",
+    "MPU Berlin Kosten",
+    "MPU Berater Berlin",
   ],
   icons: {
     icon: "/icon.png",
@@ -48,10 +53,10 @@ export const metadata: Metadata = {
     type: "website",
     locale: "de_DE",
     url: siteUrl,
-    siteName: "Psychologische Beratung — Lukas Herbig",
-    title: "Psychologische Beratung | Lukas Herbig",
+    siteName: "Psychologische Beratung Berlin — Lukas Herbig",
+    title: "Psychologische Beratung Berlin | MPU Beratung & Workshops — Lukas Herbig",
     description:
-      "MPU-Vorbereitung, mentale Gesundheit & Workshops — professionelle psychologische Beratung mit systemischem Ansatz.",
+      "MPU-Vorbereitung in Berlin, mentale Gesundheit & Workshops — professionelle psychologische Beratung mit systemischem Ansatz. Praxis in Berlin Mitte & Neukölln.",
     images: [
       {
         url: `${siteUrl}/og-image.png`,
@@ -63,9 +68,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Psychologische Beratung | Lukas Herbig",
+    title: "Psychologische Beratung Berlin | MPU Beratung & Workshops — Lukas Herbig",
     description:
-      "MPU-Vorbereitung, mentale Gesundheit & Workshops — professionelle psychologische Beratung mit systemischem Ansatz.",
+      "MPU-Vorbereitung in Berlin, mentale Gesundheit & Workshops — professionelle psychologische Beratung mit systemischem Ansatz.",
     images: [`${siteUrl}/og-image.png`],
   },
 };
@@ -103,6 +108,86 @@ export default function RootLayout({
             }
           `}
         </Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              name: "Psychologische Beratung — Lukas Herbig",
+              description:
+                "Psychologische Beratung in Berlin: MPU-Vorbereitung, verkehrspsychologische Beratung, psychische Gefährdungsbeurteilungen und Workshops für mentale Gesundheit.",
+              url: "https://herbig-beratung.de",
+              telephone: "+4917672229459",
+              email: "kontakt@herbig-beratung.de",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Paul-Robeson-Straße 3",
+                addressLocality: "Berlin",
+                postalCode: "10439",
+                addressCountry: "DE",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 52.5488,
+                longitude: 13.4105,
+              },
+              areaServed: {
+                "@type": "City",
+                name: "Berlin",
+              },
+              priceRange: "€€",
+              openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                ],
+                opens: "09:00",
+                closes: "18:00",
+              },
+              sameAs: [],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Psychologische Beratungsleistungen",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "MPU Beratung Berlin",
+                      description:
+                        "Verkehrspsychologische Beratung und MPU-Vorbereitung in Berlin. Alkohol, Drogen, Punkte, P-Schein. 4–8 Stunden Einzelberatung.",
+                    },
+                    price: "1200",
+                    priceCurrency: "EUR",
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Psychische Gefährdungsbeurteilung Berlin",
+                      description:
+                        "IHK-zertifizierte psychische Gefährdungsbeurteilung für Unternehmen in Berlin nach GDA-Leitlinien.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Psychologische Workshops Berlin",
+                      description:
+                        "Workshops für mentale Gesundheit, Resilienz, Stressbewältigung und gesunde Führung in Berlin.",
+                    },
+                  },
+                ],
+              },
+            }),
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

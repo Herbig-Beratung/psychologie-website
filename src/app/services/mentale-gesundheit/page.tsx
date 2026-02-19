@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Mentale Gesundheit & Leistungsfähigkeit — Psychologische Beratung",
+  title: "Mentale Gesundheit & Leistungsfähigkeit — Psychologische Beratung Berlin",
   description:
-    "Psychologische Beratung zur Stärkung von Selbstregulation, Belastbarkeit und mentaler Klarheit. Online oder in Präsenz in Berlin.",
+    "Psychologische Beratung in Berlin zur Stärkung von Selbstregulation, Belastbarkeit und mentaler Klarheit. Psychologe Lukas Herbig — online oder in Präsenz in Berlin Mitte & Neukölln.",
 };
 
 export default function MentaleGesundheitPage() {

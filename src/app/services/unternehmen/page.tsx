@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Psychologie in Unternehmen & Organisationen",
+  title: "Psychologie in Unternehmen Berlin — Gefährdungsbeurteilung & Workshops",
   description:
-    "Psychische Gefährdungsbeurteilung (IHK-zertifiziert), Führungskräfteberatung, Schulungen und Workshops für gesunde Organisationen. Lukas Herbig.",
+    "Psychische Gefährdungsbeurteilung Berlin (IHK-zertifiziert), Führungskräfteberatung und Workshops für gesunde Organisationen. Psychologe Lukas Herbig in Berlin.",
 };
 
 export default function UnternehmenPage() {
