@@ -21,9 +21,9 @@ export default function ServicesPage() {
             Mein Angebot
           </h1>
           <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
-            Von der individuellen MPU-Vorbereitung in Berlin über psychologische
+            Von der individuellen MPU-Vorbereitung über psychologische
             Einzelberatung bis hin zu Workshops und Gefährdungsbeurteilungen für
-            Unternehmen — alles aus einer Hand.
+            Unternehmen.
           </p>
         </div>
       </section>
@@ -44,9 +44,9 @@ export default function ServicesPage() {
                   Verkehrspsychologische Beratung & MPU-Vorbereitung
                 </h2>
                 <p className="text-muted leading-relaxed mb-6">
-                  Strukturierte, evidenzbasierte MPU-Vorbereitung in Berlin — mit Fokus auf
-                  Einsicht, Veränderung und nachhaltige Stabilität. Beratung in
-                  Berlin Mitte, Neukölln oder online.
+                  Strukturierte, evidenzbasierte Vorbereitung auf die
+                  medizinisch-psychologische Untersuchung — mit Fokus auf
+                  Einsicht, Veränderung und nachhaltige Stabilität.
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
                   {[

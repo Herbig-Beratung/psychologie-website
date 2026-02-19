@@ -11,10 +11,9 @@ export default function Footer() {
             </h3>
             <p className="text-secondary text-sm font-medium mb-4">Lukas Herbig</p>
             <p className="text-white/70 text-sm leading-relaxed">
-              Psychologische Beratung in Berlin für Privatpersonen und
-              Unternehmen — MPU-Vorbereitung, verkehrspsychologische Beratung,
-              mentale Gesundheit, Workshops und psychische Gefährdungsbeurteilungen.
-              Praxis in Berlin Mitte & Neukölln.
+              Psychologische Beratung für Privatpersonen und
+              Unternehmen — MPU-Vorbereitung, mentale Gesundheit, Resilienz und
+              gesunde Führung. Praxis in Berlin.
             </p>
           </div>
 

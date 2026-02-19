@@ -42,9 +42,9 @@ export default function MpuPage() {
             Verkehrspsychologische Beratung &<br className="hidden md:block" />{" "}MPU-Vorbereitung
           </h1>
           <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
-            Strukturierte, evidenzbasierte MPU-Vorbereitung in Berlin — mit Fokus auf Einsicht,
-            Veränderung und nachhaltige Stabilität. Beratung in Berlin Mitte,
-            Neukölln oder online.
+            Strukturierte, evidenzbasierte Vorbereitung auf die
+            medizinisch-psychologische Untersuchung — mit Fokus auf Einsicht,
+            Veränderung und nachhaltige Stabilität.
           </p>
         </div>
       </section>

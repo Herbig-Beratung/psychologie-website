@@ -20,14 +20,14 @@ export default function Home() {
         <div className="relative z-10 max-w-6xl mx-auto w-full px-5 sm:px-6 py-16 md:py-28 lg:py-36">
           <div className="max-w-2xl animate-fade-in-up">
               <p className="text-white/70 font-medium text-xs sm:text-sm uppercase tracking-widest mb-3 md:mb-4">
-                Psychologische Beratung in Berlin
+                Psychologische Beratung
               </p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 md:mb-6">
                 Psychologische Beratung{" "}
                 <span className="text-primary-light">mit System</span>
               </h1>
               <p className="text-base md:text-lg text-white/80 leading-relaxed mb-6 md:mb-10">
-                Von der MPU-Vorbereitung in Berlin über psychische Gefährdungsbeurteilungen
+                Von der MPU-Vorbereitung über psychische Gefährdungsbeurteilungen
                 bis hin zu Workshops — ich unterstütze Einzelpersonen und
                 Unternehmen mit einem ganzheitlichen, systemischen Ansatz.
               </p>
@@ -194,12 +194,12 @@ export default function Home() {
                 Lukas Herbig
               </h2>
               <p className="text-sm md:text-base text-muted leading-relaxed mb-3 md:mb-4">
-                Als Psychologe (M.Sc. Klinische Psychologie) in Berlin verbinde ich
+                Als Psychologe (M.Sc. Klinische Psychologie) verbinde ich
                 verschiedenste psychologische Methoden miteinander — mit einem
                 klaren Schwerpunkt auf dem systemischen Ansatz.
               </p>
               <p className="text-sm md:text-base text-muted leading-relaxed mb-6 md:mb-8">
-                Mein Angebot in Berlin richtet sich an Einzelpersonen, die sich auf ihre
+                Mein Angebot richtet sich an Einzelpersonen, die sich auf ihre
                 MPU vorbereiten möchten, sowie an Unternehmen, die in die
                 mentale Gesundheit ihrer Mitarbeitenden investieren.
               </p>
@@ -312,7 +312,7 @@ export default function Home() {
             Der erste Schritt ist der wichtigste
           </h2>
           <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 md:mb-10">
-            Ob MPU-Vorbereitung in Berlin, Gefährdungsbeurteilung oder Workshop —
+            Ob MPU-Vorbereitung, Gefährdungsbeurteilung oder Workshop —
             kontaktieren Sie mich für ein unverbindliches Erstgespräch und wir
             finden die passende Lösung für Ihr Anliegen.
           </p>
