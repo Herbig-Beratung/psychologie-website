@@ -50,11 +50,10 @@ export default function ServicesPage() {
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
                   {[
-                    "Individuelle Situationsanalyse",
-                    "Aufarbeitung der Hintergründe",
-                    "Nachhaltige Verhaltensänderung",
-                    "MPU-Simulation mit Feedback",
-                    "Abstinenznachweis & Dokumentation",
+                    "Realistische Ersteinschätzung",
+                    "Beratung zur Abstinenzplanung",
+                    "Aufarbeitung der Ursachen",
+                    "Verhaltensänderung",
                     "Rückfallprävention",
                   ].map((item, i) => (
                     <li
