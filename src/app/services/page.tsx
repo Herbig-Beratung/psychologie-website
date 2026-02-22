@@ -55,6 +55,7 @@ export default function ServicesPage() {
                     "Aufarbeitung der Ursachen",
                     "Verhaltensänderung",
                     "Rückfallprävention",
+                    "Simulation der Prüfung",
                   ].map((item, i) => (
                     <li
                       key={i}
