@@ -3,12 +3,16 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function FloatingMpuCta() {
   const [minimized, setMinimized] = useState(false);
+  const pathname = usePathname();
+
+  if (pathname === "/") return null;
 
   return (
-    <div className="fixed bottom-4 right-4 sm:right-8 sm:bottom-auto sm:top-[32%] z-50 flex items-end gap-2 sm:gap-3">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-8 z-50 flex items-end gap-2 sm:gap-3">
       {/* Speech Bubble */}
       {!minimized && (
         <div className="relative bg-card border border-border rounded-2xl shadow-2xl p-3 sm:p-4 w-48 sm:w-56 animate-fade-in-up">
@@ -26,7 +30,7 @@ export default function FloatingMpuCta() {
             Kostenloses Erstgespräch
           </h3>
           <a
-            href="tel:+4917672229459"
+            href="tel:+493098596064"
             className="flex items-center gap-2 w-full px-3 py-2 sm:px-4 sm:py-2.5 bg-secondary text-white text-xs sm:text-sm font-medium rounded-lg hover:bg-secondary/90 transition-colors duration-200 justify-center"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -35,7 +39,7 @@ export default function FloatingMpuCta() {
             Jetzt anrufen
           </a>
           <p className="text-[11px] text-muted text-center mt-1.5">
-            +49 176 72229459
+            030 98596064
           </p>
 
           {/* Arrow pointing right */}

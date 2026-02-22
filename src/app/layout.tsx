@@ -118,7 +118,7 @@ export default function RootLayout({
               description:
                 "Psychologische Beratung in Berlin: MPU-Vorbereitung, verkehrspsychologische Beratung, psychische Gefährdungsbeurteilungen und Workshops für mentale Gesundheit.",
               url: "https://herbig-beratung.de",
-              telephone: "+4917672229459",
+              telephone: "+493098596064",
               email: "kontakt@herbig-beratung.de",
               address: {
                 "@type": "PostalAddress",

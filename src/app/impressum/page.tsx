@@ -28,7 +28,7 @@ export default function ImpressumPage() {
                 Deutschland
               </p>
               <p>
-                Telefon: 017672229459<br />
+                Telefon: 030 98596064<br />
                 E-Mail: kontakt@herbig-beratung.de
               </p>
             </div>

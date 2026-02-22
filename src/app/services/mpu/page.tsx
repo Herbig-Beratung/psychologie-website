@@ -128,51 +128,75 @@ export default function MpuPage() {
         </div>
       </section>
 
-      {/* Beratungsinhalte */}
+      {/* Ablaufplan */}
       <section className="py-12 md:py-20 bg-card">
-        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+        <div className="max-w-4xl mx-auto px-5 sm:px-6">
           <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
-            Beratungsinhalte
+            Ihr Weg zur MPU
           </p>
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-10">
-            Was wir gemeinsam erarbeiten
+            So läuft die Vorbereitung ab
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="relative">
             {[
               {
-                title: "Ursachenanalyse",
+                step: "1",
+                title: "Kostenloses Erstgespräch",
                 description:
-                  "Gemeinsame Analyse der Hintergründe und Auslöser, die zur Auffälligkeit geführt haben. Verstehen, was passiert ist und warum.",
-                icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z",
+                  "Persönliche Einschätzung Ihrer Situation und bei Bedarf Beratung zur Abstinenzplanung.",
               },
               {
-                title: "Veränderungsmotivation",
+                step: "2",
+                title: "Akteneinsicht & Ursachenanalyse",
                 description:
-                  "Entwicklung einer glaubwürdigen, intrinsischen Motivation zur Veränderung — nicht nur für die MPU, sondern für Ihr Leben.",
-                icon: "M13 10V3L4 14h7v7l9-11h-7z",
+                  "Beginn der Sitzungen mit Sichtung Ihrer Unterlagen und gemeinsamer Analyse der Hintergründe.",
               },
               {
-                title: "Aufarbeitung",
+                step: "3",
+                title: "Aufarbeitung der Ursachen",
                 description:
-                  "Erkennen und Bearbeiten dysfunktionaler Verhaltensmuster. Neue Strategien für den Umgang mit kritischen Situationen.",
-                icon: "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15",
+                  "Tiefere Auseinandersetzung mit den Hintergründen Ihres Verhaltens und den zugrundeliegenden Mustern.",
               },
               {
+                step: "4",
+                title: "Veränderungsmotivation aufbauen",
+                description:
+                  "Entwicklung einer glaubwürdigen, intrinsischen Motivation zur nachhaltigen Verhaltensänderung.",
+              },
+              {
+                step: "5",
                 title: "Rückfallprophylaxe",
                 description:
-                  "Entwicklung konkreter Strategien und Handlungspläne, um Rückfälle dauerhaft zu verhindern.",
-                icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+                  "Erarbeitung konkreter Strategien und Handlungspläne für den Umgang mit kritischen Situationen.",
               },
-            ].map((item, i) => (
-              <div key={i} className="bg-background border border-border rounded-2xl p-6">
-                <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary mb-4">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={item.icon} />
-                  </svg>
+              {
+                step: "6",
+                title: "Prüfungssimulation",
+                description:
+                  "Realistische Simulation der MPU-Prüfung mit detailliertem Feedback zur optimalen Vorbereitung.",
+              },
+            ].map((item, i, arr) => (
+              <div key={i} className="relative flex gap-4 sm:gap-6">
+                {/* Vertical line + circle */}
+                <div className="flex flex-col items-center">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm sm:text-base shrink-0 z-10">
+                    {item.step}
+                  </div>
+                  {i < arr.length - 1 && (
+                    <div className="w-0.5 flex-1 bg-secondary/20 my-1" />
+                  )}
                 </div>
-                <h3 className="font-semibold text-foreground mb-2">{item.title}</h3>
-                <p className="text-sm text-muted leading-relaxed">{item.description}</p>
+
+                {/* Content */}
+                <div className={`pb-8 sm:pb-10 ${i === arr.length - 1 ? "pb-0" : ""}`}>
+                  <h3 className="font-semibold text-foreground text-base sm:text-lg mb-1 pt-2 sm:pt-2.5">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-muted leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
