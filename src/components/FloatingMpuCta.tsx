@@ -2,12 +2,27 @@
 
 /* eslint-disable @next/next/no-img-element */
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
 export default function FloatingMpuCta() {
   const [minimized, setMinimized] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+  const scrollTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const pathname = usePathname();
+
+  useEffect(() => {
+    function handleScroll() {
+      setScrolling(true);
+      if (scrollTimer.current) clearTimeout(scrollTimer.current);
+      scrollTimer.current = setTimeout(() => setScrolling(false), 800);
+    }
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (scrollTimer.current) clearTimeout(scrollTimer.current);
+    };
+  }, []);
 
   if (pathname === "/") return null;
 
@@ -15,7 +30,7 @@ export default function FloatingMpuCta() {
     <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-8 z-50 flex items-end gap-2 sm:gap-3">
       {/* Speech Bubble */}
       {!minimized && (
-        <div className="relative bg-card border border-border rounded-2xl shadow-2xl p-3 sm:p-4 w-48 sm:w-56 animate-fade-in-up">
+        <div className={`relative bg-card border border-border rounded-2xl shadow-2xl p-3 sm:p-4 w-48 sm:w-56 animate-fade-in-up transition-opacity duration-300 ${scrolling ? "opacity-30 pointer-events-none" : "opacity-100"}`}>
           <button
             onClick={() => setMinimized(true)}
             className="absolute top-2 right-2 w-6 h-6 flex items-center justify-center rounded-full text-muted hover:text-foreground hover:bg-background/80 transition-colors"
