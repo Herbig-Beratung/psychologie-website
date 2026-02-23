@@ -33,7 +33,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Link
-                  href="/services#mpu"
+                  href="/services/mpu"
                   className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-3.5 bg-secondary text-white font-medium rounded-lg hover:bg-secondary/90 transition-colors duration-200 text-sm sm:text-base"
                 >
                   MPU Beratung
