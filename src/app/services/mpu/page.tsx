@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-
+import MpuGruende from "@/components/MpuGruende";
 
 export const metadata: Metadata = {
   title: "MPU Beratung Berlin — Verkehrspsychologische Beratung & MPU-Vorbereitung",
   description:
-    "MPU Beratung in Berlin: Strukturierte, evidenzbasierte MPU-Vorbereitung mit 4–8 Stunden verkehrspsychologischer Beratung. Alkohol, Drogen, Punkte & P-Schein. Online oder in Präsenz in Berlin Mitte & Neukölln. Komplettpaket 1.200 €.",
+    "MPU Beratung in Berlin: Strukturierte, evidenzbasierte MPU-Vorbereitung. Alkohol, Drogen, Punkte & P-Schein. Kompakt-Paket ab 799 € oder Standard-Paket ab 1.200 €. Online oder in Präsenz in Berlin Mitte & Neukölln.",
 };
 
 export default function MpuPage() {
@@ -71,9 +71,11 @@ export default function MpuPage() {
                   durch den gesamten Vorbereitungsprozess.
                 </p>
                 <p>
-                  Die verkehrspsychologische Beratung umfasst je nach
-                  individuellem Fall <strong className="text-foreground">4 bis 8 Stunden</strong> intensive
-                  Einzelberatung. Gemeinsam erarbeiten wir die Grundlagen für
+                  Je nach Bedarf biete ich zwei Pakete an: Das{" "}
+                  <strong className="text-foreground">Kompakt-Paket</strong> (3 Stunden in einer Sitzung)
+                  für klare Fälle und das{" "}
+                  <strong className="text-foreground">Standard-Paket</strong> (4–6 Einheiten)
+                  für eine umfassende Vorbereitung. Gemeinsam erarbeiten wir die Grundlagen für
                   eine erfolgreiche MPU — von der Ursachenanalyse über die
                   Veränderungsmotivation bis hin zur Rückfallprophylaxe.
                 </p>
@@ -99,7 +101,7 @@ export default function MpuPage() {
                   </div>
                   <h3 className="font-semibold text-foreground">Umfang</h3>
                 </div>
-                <p className="text-sm text-muted">4–8 Stunden verkehrspsychologische Einzelberatung, individuell angepasst an Ihren Fall</p>
+                <p className="text-sm text-muted">Kompakt (3 Std.) oder Standard (4–6 Einheiten) — individuell angepasst an Ihren Fall</p>
               </div>
               <div className="bg-card border border-border rounded-2xl p-6">
                 <div className="flex items-center gap-3 mb-4">
@@ -119,17 +121,30 @@ export default function MpuPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                   </div>
-                  <h3 className="font-semibold text-foreground">Komplettpaket</h3>
+                  <h3 className="font-semibold text-foreground">Zwei Pakete</h3>
                 </div>
-                <p className="text-sm text-muted">Alle Sitzungen, Materialien, Vermittlung zu Instituten und Terminierung inklusive</p>
+                <p className="text-sm text-muted">Kompakt-Paket ab 799 € oder Standard-Paket ab 1.200 € — inkl. aller Materialien</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Ablaufplan */}
+      {/* Gründe für MPU */}
       <section className="py-12 md:py-20 bg-card">
+        <div className="max-w-4xl mx-auto px-5 sm:px-6">
+          <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
+            Hintergründe
+          </p>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-8">
+            Gründe für eine MPU
+          </h2>
+          <MpuGruende />
+        </div>
+      </section>
+
+      {/* Ablaufplan */}
+      <section className="py-12 md:py-20 bg-background">
         <div className="max-w-4xl mx-auto px-5 sm:px-6">
           <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
             Ihr Weg zur MPU
@@ -254,29 +269,98 @@ export default function MpuPage() {
         </div>
       </section>
 
-      {/* Preis & CTA */}
+      {/* Pakete & Preise */}
       <section className="py-12 md:py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
-        <div className="max-w-3xl mx-auto px-5 sm:px-6 text-center">
-          <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
-            Komplettpaket
-          </p>
-          <p className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2">{"1.200 €"}</p>
-          <p className="text-white/60 text-sm mb-8">
-            inkl. aller Sitzungen, Materialien & organisatorischer Begleitung
-          </p>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
-            Bereit für den ersten Schritt?
-          </h2>
-          <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 md:mb-10">
-            In einem unverbindlichen Erstgespräch klären wir Ihre individuelle
-            Situation und ich berate Sie zum weiteren Vorgehen.
-          </p>
-          <Link
-            href="/contact?subject=mpu"
-            className="inline-flex items-center justify-center px-8 py-3.5 bg-secondary text-white font-medium rounded-lg hover:bg-secondary/90 transition-colors duration-200 text-base"
-          >
-            Erstgespräch vereinbaren
-          </Link>
+        <div className="max-w-5xl mx-auto px-5 sm:px-6">
+          <div className="text-center mb-10">
+            <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
+              Pakete & Preise
+            </p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+              Zwei Wege zur erfolgreichen MPU
+            </h2>
+            <p className="text-white/70 max-w-2xl mx-auto">
+              Wählen Sie das Paket, das zu Ihrer Situation passt — oder lassen
+              Sie sich im kostenlosen Erstgespräch beraten.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            {/* Kompakt-Paket */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 sm:p-8 flex flex-col">
+              <p className="text-secondary text-xs font-semibold uppercase tracking-wider mb-2">
+                Kompakt-Paket
+              </p>
+              <p className="text-3xl sm:text-4xl font-bold text-white mb-1">
+                799 €
+              </p>
+              <p className="text-white/50 text-sm mb-6">
+                1 Termin · 3 Stunden
+              </p>
+              <ul className="space-y-3 mb-8 flex-1">
+                {[
+                  "Intensive Einzelsitzung (3 Std.)",
+                  "Ersteinschätzung & Ursachenanalyse",
+                  "Aufarbeitung der Kernthemen",
+                  "Prüfungssimulation",
+                  "Alle Materialien inklusive",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-white/80">
+                    <svg className="w-4 h-4 text-secondary mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href="/contact?subject=mpu-kompakt"
+                className="block w-full px-6 py-3 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors duration-200 text-sm text-center"
+              >
+                Erstgespräch vereinbaren
+              </Link>
+            </div>
+
+            {/* Standard-Paket */}
+            <div className="relative bg-white/15 backdrop-blur-sm border-2 border-secondary rounded-2xl p-6 sm:p-8 flex flex-col">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-white text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full">
+                Empfohlen
+              </div>
+              <p className="text-secondary text-xs font-semibold uppercase tracking-wider mb-2">
+                Standard-Paket
+              </p>
+              <p className="text-3xl sm:text-4xl font-bold text-white mb-1">
+                1.200 €
+              </p>
+              <p className="text-white/50 text-sm mb-6">
+                4–6 Einheiten · umfassende Begleitung
+              </p>
+              <ul className="space-y-3 mb-8 flex-1">
+                {[
+                  "4–6 Einzelsitzungen",
+                  "Ausführliche Ursachenanalyse",
+                  "Abstinenzplanung & Vermittlung",
+                  "Aufarbeitung & Verhaltensänderung",
+                  "Rückfallprophylaxe",
+                  "Prüfungssimulation mit Feedback",
+                  "MPU-Terminierung & Nachbetreuung",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-white/80">
+                    <svg className="w-4 h-4 text-secondary mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href="/contact?subject=mpu"
+                className="block w-full px-6 py-3 bg-secondary text-white font-medium rounded-lg hover:bg-secondary/90 transition-colors duration-200 text-sm text-center"
+              >
+                Erstgespräch vereinbaren
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </>
