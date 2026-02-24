@@ -59,10 +59,6 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <div className="bg-secondary-light border border-secondary/20 rounded-2xl p-5 md:p-8">
-                <h3 className="text-xl font-semibold text-foreground mb-3">Meine Überzeugung</h3>
-                <blockquote className="text-muted leading-relaxed italic">&ldquo;Veränderung beginnt mit dem Verstehen. Wenn wir die Zusammenhänge erkennen, in denen wir handeln und fühlen, eröffnen sich neue Möglichkeiten — für Einzelne genauso wie für ganze Organisationen.&rdquo;</blockquote>
-              </div>
             </div>
           </div>
         </div>

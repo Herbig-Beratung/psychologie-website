@@ -62,31 +62,25 @@ export default function MpuPage() {
               </h2>
               <div className="space-y-4 text-muted leading-relaxed">
                 <p>
-                  Meine Beratung richtet sich an alle, die eine{" "}
-                  <strong className="text-foreground">MPU-Anordnung</strong> erhalten haben — ob wegen{" "}
-                  <strong className="text-foreground">Alkohol, Drogen, Punkten</strong> oder im Zusammenhang
-                  mit dem{" "}
-                  <strong className="text-foreground">Personenbeförderungsschein (P-Schein)</strong>.
-                  Unabhängig vom Anlass begleite ich Sie strukturiert und individuell
-                  durch den gesamten Vorbereitungsprozess.
+                  Meine Beratung richtet sich an alle, die eine MPU-Anordnung
+                  erhalten haben — ob wegen Alkohol, Drogen, Punkten oder im
+                  Zusammenhang mit dem Personenbeförderungsschein (P-Schein).
+                  Unabhängig vom Anlass begleite ich Sie strukturiert und
+                  individuell durch den gesamten Vorbereitungsprozess.
                 </p>
                 <p>
-                  Je nach Bedarf biete ich zwei Pakete an: Das{" "}
-                  <strong className="text-foreground">Kompakt-Paket</strong> (3 Stunden in einer Sitzung)
-                  für klare Fälle und das{" "}
-                  <strong className="text-foreground">Standard-Paket</strong> (4–6 Einheiten)
-                  für eine umfassende Vorbereitung. Gemeinsam erarbeiten wir die Grundlagen für
+                  Je nach Bedarf biete ich zwei Pakete an: das Kompakt-Paket
+                  (3 Stunden in einer Sitzung) für klare Fälle und das
+                  Standard-Paket (4–6 Einheiten) für eine umfassende
+                  Vorbereitung. Gemeinsam erarbeiten wir die Grundlagen für
                   eine erfolgreiche MPU — von der Ursachenanalyse über die
                   Veränderungsmotivation bis hin zur Rückfallprophylaxe.
                 </p>
                 <p>
-                  Die Beratung kann flexibel{" "}
-                  <strong className="text-foreground">online oder in Präsenz</strong> stattfinden.
-                  Für Präsenz-Sitzungen werden Beratungsräume in{" "}
-                  <strong className="text-foreground">Berlin Mitte</strong> oder{" "}
-                  <strong className="text-foreground">Berlin Neukölln</strong> angemietet,
-                  um eine professionelle und angenehme Atmosphäre zu
-                  gewährleisten.
+                  Die Beratung kann flexibel online oder in Präsenz
+                  stattfinden. Für Präsenz-Sitzungen werden Beratungsräume in
+                  Berlin Mitte oder Neukölln angemietet, um eine professionelle
+                  und angenehme Atmosphäre zu gewährleisten.
                 </p>
               </div>
             </div>
@@ -125,145 +119,6 @@ export default function MpuPage() {
                 </div>
                 <p className="text-sm text-muted">Kompakt-Paket ab 799 € oder Standard-Paket ab 1.200 € — inkl. aller Materialien</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Gründe für MPU */}
-      <section className="py-12 md:py-20 bg-card">
-        <div className="max-w-4xl mx-auto px-5 sm:px-6">
-          <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
-            Hintergründe
-          </p>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-8">
-            Gründe für eine MPU
-          </h2>
-          <MpuGruende />
-        </div>
-      </section>
-
-      {/* Ablaufplan */}
-      <section className="py-12 md:py-20 bg-background">
-        <div className="max-w-4xl mx-auto px-5 sm:px-6">
-          <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
-            Ihr Weg zur MPU
-          </p>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-10">
-            So läuft die Vorbereitung ab
-          </h2>
-
-          <div className="relative">
-            {[
-              {
-                step: "1",
-                title: "Kostenloses Erstgespräch",
-                description:
-                  "Persönliche Einschätzung Ihrer Situation und bei Bedarf Beratung zur Abstinenzplanung.",
-              },
-              {
-                step: "2",
-                title: "Akteneinsicht & Ursachenanalyse",
-                description:
-                  "Beginn der Sitzungen mit Sichtung Ihrer Unterlagen und gemeinsamer Analyse der Hintergründe.",
-              },
-              {
-                step: "3",
-                title: "Aufarbeitung der Ursachen",
-                description:
-                  "Tiefere Auseinandersetzung mit den Hintergründen Ihres Verhaltens und den zugrundeliegenden Mustern.",
-              },
-              {
-                step: "4",
-                title: "Veränderungsmotivation aufbauen",
-                description:
-                  "Entwicklung einer glaubwürdigen, intrinsischen Motivation zur nachhaltigen Verhaltensänderung.",
-              },
-              {
-                step: "5",
-                title: "Rückfallprophylaxe",
-                description:
-                  "Erarbeitung konkreter Strategien und Handlungspläne für den Umgang mit kritischen Situationen.",
-              },
-              {
-                step: "6",
-                title: "Prüfungssimulation",
-                description:
-                  "Realistische Simulation der MPU-Prüfung mit detailliertem Feedback zur optimalen Vorbereitung.",
-              },
-            ].map((item, i, arr) => (
-              <div key={i} className="relative flex gap-4 sm:gap-6">
-                {/* Vertical line + circle */}
-                <div className="flex flex-col items-center">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm sm:text-base shrink-0 z-10">
-                    {item.step}
-                  </div>
-                  {i < arr.length - 1 && (
-                    <div className="w-0.5 flex-1 bg-secondary/20 my-1" />
-                  )}
-                </div>
-
-                {/* Content */}
-                <div className={`pb-8 sm:pb-10 ${i === arr.length - 1 ? "pb-0" : ""}`}>
-                  <h3 className="font-semibold text-foreground text-base sm:text-lg mb-1 pt-2 sm:pt-2.5">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-muted leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Zusätzliche Leistungen */}
-      <section className="py-12 md:py-20 bg-background">
-        <div className="max-w-6xl mx-auto px-5 sm:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
-            <div>
-              <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
-                Rundum-Service
-              </p>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Mehr als nur Beratung
-              </h2>
-              <div className="space-y-4 text-muted leading-relaxed">
-                <p>
-                  Die MPU-Vorbereitung endet nicht bei den Beratungssitzungen.
-                  Ich übernehme für Sie die{" "}
-                  <strong className="text-foreground">Vermittlung zu zertifizierten Instituten</strong>{" "}
-                  für die Durchführung von Abstinenznachweisen und unterstütze
-                  Sie bei der{" "}
-                  <strong className="text-foreground">Terminierung Ihres MPU-Termins</strong>.
-                </p>
-                <p>
-                  So können Sie sich voll auf die inhaltliche Vorbereitung
-                  konzentrieren, während ich die organisatorischen Schritte
-                  koordiniere.
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <ul className="space-y-4">
-                {[
-                  "Vermittlung zu Instituten für Abstinenznachweise (Urin-/Haaranalyse)",
-                  "Unterstützung bei der MPU-Terminierung",
-                  "Begleitung bei der Abstinenznachweis-Dokumentation",
-                  "MPU-Simulation mit detailliertem Feedback",
-                  "Bereitstellung aller relevanten Materialien und Unterlagen",
-                  "Nachbetreuung und Rückfragen auch nach Abschluss",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <svg className="w-5 h-5 text-secondary mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span className="text-muted">{item}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>
@@ -359,6 +214,141 @@ export default function MpuPage() {
               >
                 Erstgespräch vereinbaren
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ablaufplan */}
+      <section className="py-12 md:py-20 bg-background">
+        <div className="max-w-4xl mx-auto px-5 sm:px-6">
+          <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
+            Ihr Weg zur MPU
+          </p>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-10">
+            So läuft die Vorbereitung ab
+          </h2>
+
+          <div className="relative">
+            {[
+              {
+                step: "1",
+                title: "Kostenloses Erstgespräch",
+                description:
+                  "Persönliche Einschätzung Ihrer Situation und bei Bedarf Beratung zur Abstinenzplanung.",
+              },
+              {
+                step: "2",
+                title: "Akteneinsicht & Ursachenanalyse",
+                description:
+                  "Beginn der Sitzungen mit Sichtung Ihrer Unterlagen und gemeinsamer Analyse der Hintergründe.",
+              },
+              {
+                step: "3",
+                title: "Aufarbeitung der Ursachen",
+                description:
+                  "Tiefere Auseinandersetzung mit den Hintergründen Ihres Verhaltens und den zugrundeliegenden Mustern.",
+              },
+              {
+                step: "4",
+                title: "Veränderungsmotivation aufbauen",
+                description:
+                  "Entwicklung einer glaubwürdigen, intrinsischen Motivation zur nachhaltigen Verhaltensänderung.",
+              },
+              {
+                step: "5",
+                title: "Rückfallprophylaxe",
+                description:
+                  "Erarbeitung konkreter Strategien und Handlungspläne für den Umgang mit kritischen Situationen.",
+              },
+              {
+                step: "6",
+                title: "Prüfungssimulation",
+                description:
+                  "Realistische Simulation der MPU-Prüfung mit detailliertem Feedback zur optimalen Vorbereitung.",
+              },
+            ].map((item, i, arr) => (
+              <div key={i} className="relative flex gap-4 sm:gap-6">
+                <div className="flex flex-col items-center">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm sm:text-base shrink-0 z-10">
+                    {item.step}
+                  </div>
+                  {i < arr.length - 1 && (
+                    <div className="w-0.5 flex-1 bg-secondary/20 my-1" />
+                  )}
+                </div>
+
+                <div className={`pb-8 sm:pb-10 ${i === arr.length - 1 ? "pb-0" : ""}`}>
+                  <h3 className="font-semibold text-foreground text-base sm:text-lg mb-1 pt-2 sm:pt-2.5">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-muted leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gründe für MPU */}
+      <section className="py-12 md:py-20 bg-card">
+        <div className="max-w-4xl mx-auto px-5 sm:px-6">
+          <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
+            Hintergründe
+          </p>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-8">
+            Gründe für eine MPU
+          </h2>
+          <MpuGruende />
+        </div>
+      </section>
+
+      {/* Zusätzliche Leistungen */}
+      <section className="py-12 md:py-20 bg-background">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
+            <div>
+              <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
+                Rundum-Service
+              </p>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6">
+                Mehr als nur Beratung
+              </h2>
+              <div className="space-y-4 text-muted leading-relaxed">
+                <p>
+                  Die MPU-Vorbereitung endet nicht bei den Beratungssitzungen.
+                  Ich übernehme für Sie die Vermittlung zu zertifizierten
+                  Instituten für die Durchführung von Abstinenznachweisen und
+                  unterstütze Sie bei der Terminierung Ihres MPU-Termins.
+                </p>
+                <p>
+                  So können Sie sich voll auf die inhaltliche Vorbereitung
+                  konzentrieren, während ich die organisatorischen Schritte
+                  koordiniere.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <ul className="space-y-4">
+                {[
+                  "Vermittlung zu Instituten für Abstinenznachweise (Urin-/Haaranalyse)",
+                  "Unterstützung bei der MPU-Terminierung",
+                  "Begleitung bei der Abstinenznachweis-Dokumentation",
+                  "MPU-Simulation mit detailliertem Feedback",
+                  "Bereitstellung aller relevanten Materialien und Unterlagen",
+                  "Nachbetreuung und Rückfragen auch nach Abschluss",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-secondary mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-muted">{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
