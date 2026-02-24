@@ -355,12 +355,12 @@ export default function MpuPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-12 md:py-20 bg-card">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-primary to-primary-dark text-white">
         <div className="max-w-3xl mx-auto px-5 sm:px-6 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             Bereit für den ersten Schritt?
           </h2>
-          <p className="text-muted text-base md:text-lg leading-relaxed mb-6 md:mb-10">
+          <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 md:mb-10">
             In einem kostenlosen Erstgespräch klären wir Ihre individuelle
             Situation und ich berate Sie zum weiteren Vorgehen — unverbindlich.
           </p>
