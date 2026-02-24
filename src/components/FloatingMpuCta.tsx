@@ -30,7 +30,7 @@ export default function FloatingMpuCta() {
     <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-8 z-50 flex items-end gap-2 sm:gap-3">
       {/* Speech Bubble */}
       {!minimized && (
-        <div className={`relative bg-card border border-border rounded-2xl shadow-2xl p-3 sm:p-4 w-48 sm:w-56 animate-fade-in-up transition-opacity duration-300 ${scrolling ? "opacity-30 pointer-events-none" : "opacity-100"}`}>
+        <div className={`relative bg-card border border-border rounded-2xl shadow-2xl p-3 sm:p-4 w-48 sm:w-56 animate-fade-in-up transition-opacity duration-500 ${scrolling ? "opacity-0 pointer-events-none" : "opacity-100"}`}>
           <button
             onClick={() => setMinimized(true)}
             className="absolute top-2 right-2 w-6 h-6 flex items-center justify-center rounded-full text-muted hover:text-foreground hover:bg-background/80 transition-colors"
