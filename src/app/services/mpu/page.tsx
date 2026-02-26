@@ -70,7 +70,7 @@ export default function MpuPage() {
                 </p>
                 <p>
                   Je nach Bedarf biete ich zwei Pakete an: das Kompakt-Paket
-                  (3 Stunden in einer Sitzung) für klare Fälle und das
+                  (2 Einheiten à 2 Stunden) für klare Fälle und das
                   Standard-Paket (4–6 Einheiten) für eine umfassende
                   Vorbereitung. Gemeinsam erarbeiten wir die Grundlagen für
                   eine erfolgreiche MPU — von der Ursachenanalyse über die
@@ -95,7 +95,7 @@ export default function MpuPage() {
                   </div>
                   <h3 className="font-semibold text-foreground">Umfang</h3>
                 </div>
-                <p className="text-sm text-muted">Kompakt (3 Std.) oder Standard (4–6 Einheiten) — individuell angepasst an Ihren Fall</p>
+                <p className="text-sm text-muted">Kompakt (2 × 2 Std.) oder Standard (4–6 Einheiten) — individuell angepasst an Ihren Fall</p>
               </div>
               <div className="bg-card border border-border rounded-2xl p-6">
                 <div className="flex items-center gap-3 mb-4">
@@ -150,11 +150,11 @@ export default function MpuPage() {
                 799 €
               </p>
               <p className="text-white/50 text-sm mb-6">
-                1 Termin · 3 Stunden
+                2 Einheiten · je 2 Stunden
               </p>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
-                  "Intensive Einzelsitzung (3 Std.)",
+                  "2 Einzelsitzungen (je 2 Std.)",
                   "Ersteinschätzung & Ursachenanalyse",
                   "Aufarbeitung der Kernthemen",
                   "Prüfungssimulation",
