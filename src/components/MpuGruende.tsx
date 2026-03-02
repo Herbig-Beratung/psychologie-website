@@ -4,28 +4,28 @@ import { useState } from "react";
 
 const tabs = [
   {
-    id: "alkohol",
-    label: "MPU Alkohol",
+    id: "verkehrsrecht",
+    label: "Verkehrsrechtliche Auffälligkeiten",
     intro:
-      "Eine MPU wegen Alkohol wird angeordnet, wenn Sie mit einer Blutalkoholkonzentration (BAK) von 1,6 Promille oder mehr im Straßenverkehr aufgefallen sind — oder bei wiederholten Alkoholdelikten bereits ab 0,5 Promille.",
+      "Eine MPU wird angeordnet, wenn die Fahrerlaubnisbehörde Zweifel an Ihrer Fahreignung hat — etwa nach verkehrsrechtlichen Auffälligkeiten, die auf eine eingeschränkte Verkehrszuverlässigkeit hindeuten. Die Vorbereitung umfasst eine strukturierte Aufarbeitung der Vorgeschichte und den Aufbau stabiler Verhaltensänderungen.",
     questions: [
       {
-        q: "Ab welchem Promillewert wird eine MPU angeordnet?",
-        a: "In der Regel ab 1,6 Promille bei einer Ersttat. Bei Wiederholungstätern oder Auffälligkeiten im Zusammenhang mit Alkohol kann die MPU bereits ab 0,5 Promille angeordnet werden. Auch eine Straftat unter Alkoholeinfluss (z.\u00A0B. Körperverletzung) kann zur MPU-Anordnung führen.",
+        q: "Wann wird eine MPU wegen verkehrsrechtlicher Auffälligkeiten angeordnet?",
+        a: "Die Fahrerlaubnisbehörde ordnet eine MPU an, wenn bestimmte gesetzlich definierte Grenzwerte überschritten wurden oder wiederholte Auffälligkeiten im Straßenverkehr vorliegen. Auch Straftaten mit Verkehrsbezug können zur Anordnung führen.",
       },
       {
-        q: "Muss ich einen Abstinenznachweis erbringen?",
-        a: "In den meisten Fällen ja. Je nach Schwere des Falls wird ein Abstinenznachweis über 6 oder 12 Monate gefordert — entweder über Urinscreenings oder eine Haaranalyse. Ich berate Sie im Erstgespräch, welches Programm für Ihren Fall sinnvoll ist, und vermittle Sie an zertifizierte Institute.",
+        q: "Welche Nachweise werden im Vorfeld benötigt?",
+        a: "Je nach Art und Schwere der Auffälligkeit können Nachweisprogramme über 6 oder 12 Monate erforderlich sein. Ich berate Sie im Erstgespräch, welche Dokumentationsanforderungen in Ihrem Fall gelten, und vermittle Sie an zertifizierte Institute.",
       },
       {
         q: "Wie lange dauert die Vorbereitung?",
-        a: "Die reine Beratung umfasst je nach Paket 3 bis 6 Stunden. Hinzu kommt die Zeit für den Abstinenznachweis (6–12 Monate). Je früher Sie mit der Vorbereitung beginnen, desto besser stehen Ihre Chancen.",
+        a: "Die Beratung umfasst je nach Paket 2 bis 6 Stunden. Hinzu kommt die Zeit für eventuelle Nachweisprogramme (6–12 Monate). Je früher Sie mit der Vorbereitung beginnen, desto besser stehen Ihre Aussichten.",
       },
     ],
   },
   {
     id: "punkte",
-    label: "MPU Punkte",
+    label: "Punkteauffälligkeiten",
     intro:
       "Wer im Fahreignungsregister in Flensburg 8 oder mehr Punkte ansammelt, muss zur MPU. Auch bei schwerwiegenden Einzelverstößen kann die Fahrerlaubnisbehörde eine MPU anordnen.",
     questions: [
@@ -35,38 +35,38 @@ const tabs = [
       },
       {
         q: "Welche Vergehen führen zu Punkten?",
-        a: "Geschwindigkeitsüberschreitungen, Rotlichtverstöße, Handy am Steuer, Abstandsvergehen und weitere Ordnungswidrigkeiten. Besonders schwer wiegen Straftaten im Straßenverkehr wie Nötigung oder Unfallflucht.",
+        a: "Geschwindigkeitsüberschreitungen, Rotlichtverstöße, Handynutzung am Steuer, Abstandsvergehen und weitere Ordnungswidrigkeiten. Besonders schwer wiegen Straftaten im Straßenverkehr wie Nötigung oder Unfallflucht.",
       },
       {
-        q: "Was wird in der MPU bei Punkten geprüft?",
+        q: "Was wird in der MPU bei Punkteauffälligkeiten geprüft?",
         a: "Der Gutachter prüft, ob Sie die Ursachen Ihres Fahrverhaltens erkannt haben, welche Veränderungen Sie eingeleitet haben und wie stabil diese sind. Ziel ist der Nachweis, dass Sie dauerhaft verkehrsgerecht handeln werden.",
       },
     ],
   },
   {
-    id: "drogen",
-    label: "MPU Drogen",
+    id: "substanzen",
+    label: "Substanzbezogene Auffälligkeiten",
     intro:
-      "Eine MPU wegen Drogen wird angeordnet, wenn Sie unter dem Einfluss illegaler Substanzen am Straßenverkehr teilgenommen haben — unabhängig davon, ob ein Unfall passiert ist oder nicht.",
+      "Eine MPU wird angeordnet, wenn Sie im Zusammenhang mit verkehrsrelevanten Substanzen im Straßenverkehr aufgefallen sind — unabhängig davon, ob ein Unfall vorlag oder nicht. Die Begutachtungsvorbereitung konzentriert sich auf Ursachenverständnis, Verhaltensänderung und die Erfüllung der behördlichen Nachweisanforderungen.",
     questions: [
       {
-        q: "Welche Substanzen führen zur MPU?",
-        a: "Alle illegalen Substanzen können zur MPU-Anordnung führen: Cannabis (THC), Amphetamine, Kokain, MDMA, Opiate und weitere. Bereits ein einmaliger Nachweis im Blut bei einer Verkehrskontrolle reicht aus.",
+        q: "Welche Auffälligkeiten führen zur MPU?",
+        a: "Bereits ein einmaliger Nachweis verkehrsrelevanter Substanzen bei einer Verkehrskontrolle kann zur MPU-Anordnung führen. Die Fahrerlaubnisbehörde prüft in diesen Fällen, ob Zweifel an der Fahreignung bestehen.",
       },
       {
-        q: "Welche Abstinenznachweise werden verlangt?",
-        a: "In der Regel wird ein Abstinenzprogramm über 6 oder 12 Monate gefordert. Dies erfolgt über Urinscreenings (mindestens 4–6 Termine) oder eine Haaranalyse (mindestens 6 cm Haarlänge für 6 Monate). Ich berate Sie, welches Verfahren für Sie passt.",
+        q: "Welche Nachweisanforderungen gelten?",
+        a: "In der Regel wird ein Nachweisprogramm über 6 oder 12 Monate gefordert. Die konkreten Dokumentationsanforderungen richten sich nach Art und Umfang der Auffälligkeit. Ich berate Sie, welches Verfahren in Ihrem Fall erforderlich ist.",
       },
       {
-        q: "Kann ich die MPU auch ohne Abstinenz bestehen?",
-        a: "Bei harten Drogen ist Abstinenz in der Regel zwingend erforderlich. Bei Cannabis kann unter bestimmten Umständen auch kontrolliertes Konsumverhalten (nur Gelegenheitskonsum ohne Verkehrsbezug) akzeptiert werden — das hängt vom Einzelfall ab.",
+        q: "Was ist der zentrale Fokus in der Vorbereitung?",
+        a: "Die Begutachtung prüft Ihre Einsichtsfähigkeit, die Tragfähigkeit Ihrer Verhaltensänderung und Ihre Stabilisierungsstrategien. Je nach Fallkonstellation können unterschiedliche Nachweisanforderungen gelten — das klären wir gemeinsam im Erstgespräch.",
       },
     ],
   },
 ];
 
 export default function MpuGruende() {
-  const [activeTab, setActiveTab] = useState("alkohol");
+  const [activeTab, setActiveTab] = useState("verkehrsrecht");
   const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
 
   function toggleItem(key: string) {

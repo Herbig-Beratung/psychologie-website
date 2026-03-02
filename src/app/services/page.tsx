@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Themenbereiche — Psychologische Beratung Berlin",
   description:
-    "MPU-Beratung Berlin, psychische Gefährdungsbeurteilungen für Unternehmen und Workshops für mentale Gesundheit. Psychologe Lukas Herbig in Berlin.",
+    "Verkehrspsychologische Begutachtungsvorbereitung Berlin, psychische Gefährdungsbeurteilungen für Unternehmen und Workshops. Psychologe Lukas Herbig in Berlin.",
 };
 
 const services = [
@@ -16,10 +16,10 @@ const services = [
       "Strukturierte, evidenzbasierte Vorbereitung auf die medizinisch-psychologische Untersuchung — mit Fokus auf Einsicht, Veränderung und nachhaltige Stabilität.",
     items: [
       "Realistische Ersteinschätzung",
-      "Beratung zur Abstinenzplanung",
+      "Nachweisplanung & Dokumentationsbegleitung",
       "Aufarbeitung der Ursachen",
       "Verhaltensänderung",
-      "Rückfallprävention",
+      "Stabilisierungsstrategien",
       "Prüfungssimulation",
     ],
     ctaLabel: "Erstgespräch vereinbaren",

@@ -3,9 +3,9 @@ import Link from "next/link";
 import MpuGruende from "@/components/MpuGruende";
 
 export const metadata: Metadata = {
-  title: "MPU Beratung Berlin — Verkehrspsychologische Beratung & MPU-Vorbereitung",
+  title: "MPU Vorbereitung Berlin — Verkehrspsychologische Begutachtungsvorbereitung",
   description:
-    "MPU Beratung in Berlin: Strukturierte, evidenzbasierte MPU-Vorbereitung. Alkohol, Drogen, Punkte & P-Schein. Kompakt-Paket ab 799 € oder Standard-Paket ab 1.200 €. Online oder in Präsenz in Berlin Mitte & Neukölln.",
+    "Strukturierte MPU-Vorbereitung in Berlin: Verkehrspsychologische Begutachtungsvorbereitung bei Fahreignungsfragen. Kompakt-Paket ab 799 € oder Standard-Paket ab 1.200 €. Online oder Präsenz in Berlin Mitte & Neukölln.",
 };
 
 export default function MpuPage() {
@@ -44,7 +44,7 @@ export default function MpuPage() {
           <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed animate-fade-in-up-delay-2">
             Strukturierte, evidenzbasierte Vorbereitung auf die
             medizinisch-psychologische Untersuchung — mit Fokus auf Einsicht,
-            Veränderung und nachhaltige Stabilität.
+            Verhaltensänderung und nachhaltige Stabilität.
           </p>
         </div>
       </section>
@@ -63,18 +63,20 @@ export default function MpuPage() {
               <div className="space-y-4 text-muted leading-relaxed">
                 <p>
                   Meine Beratung richtet sich an alle, die eine MPU-Anordnung
-                  erhalten haben — ob wegen Alkohol, Drogen, Punkten oder im
-                  Zusammenhang mit dem Personenbeförderungsschein (P-Schein).
-                  Unabhängig vom Anlass begleite ich Sie strukturiert und
-                  individuell durch den gesamten Vorbereitungsprozess.
+                  erhalten haben — ob aufgrund verkehrsrechtlicher Auffälligkeiten,
+                  Punkteauffälligkeiten oder im Zusammenhang mit dem
+                  Personenbeförderungsschein (P-Schein). Unabhängig vom Anlass
+                  begleite ich Sie strukturiert und individuell durch den
+                  gesamten Vorbereitungsprozess.
                 </p>
                 <p>
                   Je nach Bedarf biete ich zwei Pakete an: das Kompakt-Paket
                   (2 Einheiten à 2 Stunden) für klare Fälle und das
                   Standard-Paket (4–6 Einheiten) für eine umfassende
                   Vorbereitung. Gemeinsam erarbeiten wir die Grundlagen für
-                  eine erfolgreiche MPU — von der Ursachenanalyse über die
-                  Veränderungsmotivation bis hin zur Rückfallprophylaxe.
+                  eine fundierte Begutachtungsvorbereitung — von der Ursachenanalyse
+                  über die Veränderungsmotivation bis hin zu wirksamen
+                  Stabilisierungsstrategien.
                 </p>
                 <p>
                   Die Beratung kann flexibel online oder in Präsenz
@@ -132,7 +134,7 @@ export default function MpuPage() {
               Pakete & Preise
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-              Zwei Wege zur erfolgreichen MPU
+              Zwei Wege zur MPU-Vorbereitung
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto">
               Wählen Sie das Paket, das zu Ihrer Situation passt — oder lassen
@@ -157,7 +159,7 @@ export default function MpuPage() {
                   "2 Einzelsitzungen (je 2 Std.)",
                   "Ersteinschätzung & Ursachenanalyse",
                   "Aufarbeitung der Kernthemen",
-                  "Prüfungssimulation",
+                  "Begutachtungssimulation",
                   "Alle Materialien inklusive",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-white/80">
@@ -194,10 +196,10 @@ export default function MpuPage() {
                 {[
                   "4–6 Einzelsitzungen",
                   "Ausführliche Ursachenanalyse",
-                  "Abstinenzplanung & Vermittlung",
+                  "Nachweisplanung & Dokumentationsbegleitung",
                   "Aufarbeitung & Verhaltensänderung",
-                  "Rückfallprophylaxe",
-                  "Prüfungssimulation mit Feedback",
+                  "Stabilisierungsstrategien",
+                  "Begutachtungssimulation mit Feedback",
                   "MPU-Terminierung & Nachbetreuung",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-white/80">
@@ -235,7 +237,7 @@ export default function MpuPage() {
                 step: "1",
                 title: "Kostenloses Erstgespräch",
                 description:
-                  "Persönliche Einschätzung Ihrer Situation und bei Bedarf Beratung zur Abstinenzplanung.",
+                  "Persönliche Einschätzung Ihrer Situation und Beratung zur weiteren Vorgehensweise inkl. Nachweisplanung.",
               },
               {
                 step: "2",
@@ -257,15 +259,15 @@ export default function MpuPage() {
               },
               {
                 step: "5",
-                title: "Rückfallprophylaxe",
+                title: "Stabilisierungsstrategien entwickeln",
                 description:
                   "Erarbeitung konkreter Strategien und Handlungspläne für den Umgang mit kritischen Situationen.",
               },
               {
                 step: "6",
-                title: "Prüfungssimulation",
+                title: "Begutachtungssimulation",
                 description:
-                  "Realistische Simulation der MPU-Prüfung mit detailliertem Feedback zur optimalen Vorbereitung.",
+                  "Realistische Simulation der MPU-Begutachtung mit detailliertem Feedback zur optimalen Vorbereitung.",
               },
             ].map((item, i, arr) => (
               <div key={i} className="relative flex gap-4 sm:gap-6">
@@ -299,7 +301,7 @@ export default function MpuPage() {
             Hintergründe
           </p>
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-8">
-            Gründe für eine MPU
+            Häufige Anlässe für eine MPU
           </h2>
           <MpuGruende />
         </div>
@@ -320,7 +322,7 @@ export default function MpuPage() {
                 <p>
                   Die MPU-Vorbereitung endet nicht bei den Beratungssitzungen.
                   Ich übernehme für Sie die Vermittlung zu zertifizierten
-                  Instituten für die Durchführung von Abstinenznachweisen und
+                  Instituten für die Durchführung der erforderlichen Nachweise und
                   unterstütze Sie bei der Terminierung Ihres MPU-Termins.
                 </p>
                 <p>
@@ -334,10 +336,10 @@ export default function MpuPage() {
             <div>
               <ul className="space-y-4">
                 {[
-                  "Vermittlung zu Instituten für Abstinenznachweise (Urin-/Haaranalyse)",
+                  "Vermittlung zu Instituten für erforderliche Nachweisverfahren",
                   "Unterstützung bei der MPU-Terminierung",
-                  "Begleitung bei der Abstinenznachweis-Dokumentation",
-                  "MPU-Simulation mit detailliertem Feedback",
+                  "Begleitung bei der Nachweisdokumentation",
+                  "Begutachtungssimulation mit detailliertem Feedback",
                   "Bereitstellung aller relevanten Materialien und Unterlagen",
                   "Nachbetreuung und Rückfragen auch nach Abschluss",
                 ].map((item, i) => (

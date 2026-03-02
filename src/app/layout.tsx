@@ -30,14 +30,14 @@ export const metadata: Metadata = {
     template: "%s | Psychologische Beratung Berlin — Lukas Herbig",
   },
   description:
-    "Psychologische Beratung in Berlin: MPU-Vorbereitung, verkehrspsychologische Beratung, psychische Gefährdungsbeurteilungen und Workshops für mentale Gesundheit. Praxis in Berlin Mitte & Neukölln.",
+    "Psychologische Beratung in Berlin: Verkehrspsychologische Begutachtungsvorbereitung, psychische Gefährdungsbeurteilungen und Workshops. Praxis in Berlin Mitte & Neukölln.",
   keywords: [
     "MPU Beratung Berlin",
     "MPU Vorbereitung Berlin",
     "Verkehrspsychologische Beratung Berlin",
     "Psychologische Beratung Berlin",
     "Psychische Gefährdungsbeurteilung Berlin",
-    "Workshops mentale Gesundheit Berlin",
+    "Workshops Resilienz Berlin",
     "Verkehrspsychologie Berlin",
     "Klinische Psychologie Berlin",
     "Systemischer Ansatz",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     siteName: "Psychologische Beratung Berlin — Lukas Herbig",
     title: "Psychologische Beratung Berlin | MPU Beratung & Workshops — Lukas Herbig",
     description:
-      "MPU-Vorbereitung in Berlin, mentale Gesundheit & Workshops — professionelle psychologische Beratung mit systemischem Ansatz. Praxis in Berlin Mitte & Neukölln.",
+      "Verkehrspsychologische Begutachtungsvorbereitung in Berlin & Workshops — professionelle psychologische Beratung mit systemischem Ansatz. Praxis in Berlin Mitte & Neukölln.",
     images: [
       {
         url: `${siteUrl}/og-image.png`,
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Psychologische Beratung Berlin | MPU Beratung & Workshops — Lukas Herbig",
     description:
-      "MPU-Vorbereitung in Berlin, mentale Gesundheit & Workshops — professionelle psychologische Beratung mit systemischem Ansatz.",
+      "Verkehrspsychologische Begutachtungsvorbereitung in Berlin & Workshops — professionelle psychologische Beratung mit systemischem Ansatz.",
     images: [`${siteUrl}/og-image.png`],
   },
 };
@@ -116,7 +116,7 @@ export default function RootLayout({
               "@type": "ProfessionalService",
               name: "Psychologische Beratung — Lukas Herbig",
               description:
-                "Psychologische Beratung in Berlin: MPU-Vorbereitung, verkehrspsychologische Beratung, psychische Gefährdungsbeurteilungen und Workshops für mentale Gesundheit.",
+                "Psychologische Beratung in Berlin: Verkehrspsychologische Begutachtungsvorbereitung, psychische Gefährdungsbeurteilungen und Workshops.",
               url: "https://herbig-beratung.de",
               telephone: "+493098596064",
               email: "kontakt@herbig-beratung.de",
@@ -160,7 +160,7 @@ export default function RootLayout({
                       "@type": "Service",
                       name: "MPU Beratung Berlin",
                       description:
-                        "Verkehrspsychologische Beratung und MPU-Vorbereitung in Berlin. Alkohol, Drogen, Punkte, P-Schein. 4–8 Stunden Einzelberatung.",
+                        "Verkehrspsychologische Begutachtungsvorbereitung und MPU-Vorbereitung in Berlin. Fahreignungsfragen, Punkteauffälligkeiten, P-Schein. 4–8 Stunden Einzelberatung.",
                     },
                     price: "1200",
                     priceCurrency: "EUR",
@@ -180,7 +180,7 @@ export default function RootLayout({
                       "@type": "Service",
                       name: "Psychologische Workshops Berlin",
                       description:
-                        "Workshops für mentale Gesundheit, Resilienz, Stressbewältigung und gesunde Führung in Berlin.",
+                        "Workshops für Resilienz, Stressbewältigung und gesunde Führung in Berlin.",
                     },
                   },
                 ],

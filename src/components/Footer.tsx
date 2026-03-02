@@ -12,8 +12,8 @@ export default function Footer() {
             <p className="text-secondary text-sm font-medium mb-4">Lukas Herbig</p>
             <p className="text-white/70 text-sm leading-relaxed">
               Psychologische Beratung für Privatpersonen und
-              Unternehmen — MPU-Vorbereitung, mentale Gesundheit, Resilienz und
-              gesunde Führung. Praxis in Berlin.
+              Unternehmen — verkehrspsychologische Beratung,
+              Resilienz und gesunde Führung. Beratung in Berlin.
             </p>
           </div>
 
