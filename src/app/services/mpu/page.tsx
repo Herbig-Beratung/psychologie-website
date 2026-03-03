@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import MpuGruende from "@/components/MpuGruende";
+import MpuFaq from "@/components/MpuFaq";
+import ReviewCarousel from "@/components/ReviewCarousel";
 
 export const metadata: Metadata = {
   title: "MPU Vorbereitung Berlin — Verkehrspsychologische Begutachtungsvorbereitung",
@@ -46,6 +49,63 @@ export default function MpuPage() {
             medizinisch-psychologische Untersuchung — mit Fokus auf Einsicht,
             Verhaltensänderung und nachhaltige Stabilität.
           </p>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-8 animate-fade-in-up-delay-3">
+            <Link
+              href="/contact?subject=mpu"
+              className="inline-flex items-center justify-center px-7 py-3 bg-secondary text-white font-medium rounded-lg hover:bg-secondary/90 transition-colors duration-200 text-sm"
+            >
+              Kostenloses Erstgespräch vereinbaren
+            </Link>
+            <a
+              href="tel:03098596064"
+              className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors text-sm"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              030 98596064
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Kurzvorstellung */}
+      <section className="py-12 md:py-20 bg-card">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
+            <Image
+              src="/lukas-herbig.png"
+              alt="Lukas Herbig — Psychologe & MPU-Berater"
+              width={180}
+              height={180}
+              className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover object-top shrink-0"
+            />
+            <div>
+              <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
+                Ihr Berater
+              </p>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-2">
+                Lukas Herbig
+              </h2>
+              <p className="text-muted mb-5">
+                M.Sc. Klinische Psychologie · Verkehrspsychologische Beratung
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Ausgebildeter Psychologe mit systemischem Beratungsansatz",
+                  "Spezialisiert auf verkehrspsychologische Begutachtungsvorbereitung",
+                  "Beratung online oder in Präsenz in Berlin",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-muted">
+                    <svg className="w-5 h-5 text-secondary mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -77,12 +137,6 @@ export default function MpuPage() {
                   eine fundierte Begutachtungsvorbereitung — von der Ursachenanalyse
                   über die Veränderungsmotivation bis hin zu wirksamen
                   Stabilisierungsstrategien.
-                </p>
-                <p>
-                  Die Beratung kann flexibel online oder in Präsenz
-                  stattfinden. Für Präsenz-Sitzungen werden Beratungsräume in
-                  Berlin Mitte oder Neukölln angemietet, um eine professionelle
-                  und angenehme Atmosphäre zu gewährleisten.
                 </p>
               </div>
             </div>
@@ -121,6 +175,27 @@ export default function MpuPage() {
                 </div>
                 <p className="text-sm text-muted">Kompakt-Paket ab 799 € oder Standard-Paket ab 1.200 € — inkl. aller Materialien</p>
               </div>
+            </div>
+          </div>
+
+          <div className="mt-12 pt-10 border-t border-border">
+            <h3 className="font-semibold text-foreground text-lg mb-6">Rundum-Service inklusive</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-4">
+              {[
+                "Vermittlung zu Instituten für erforderliche Nachweisverfahren",
+                "Unterstützung bei der MPU-Terminierung",
+                "Begleitung bei der Nachweisdokumentation",
+                "Begutachtungssimulation mit detailliertem Feedback",
+                "Bereitstellung aller relevanten Materialien",
+                "Nachbetreuung auch nach Abschluss",
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-2.5">
+                  <svg className="w-4 h-4 text-secondary mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm text-muted">{item}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -307,52 +382,19 @@ export default function MpuPage() {
         </div>
       </section>
 
-      {/* Zusätzliche Leistungen */}
-      <section className="py-12 md:py-20 bg-background">
-        <div className="max-w-6xl mx-auto px-5 sm:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
-            <div>
-              <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
-                Rundum-Service
-              </p>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Mehr als nur Beratung
-              </h2>
-              <div className="space-y-4 text-muted leading-relaxed">
-                <p>
-                  Die MPU-Vorbereitung endet nicht bei den Beratungssitzungen.
-                  Ich übernehme für Sie die Vermittlung zu zertifizierten
-                  Instituten für die Durchführung der erforderlichen Nachweise und
-                  unterstütze Sie bei der Terminierung Ihres MPU-Termins.
-                </p>
-                <p>
-                  So können Sie sich voll auf die inhaltliche Vorbereitung
-                  konzentrieren, während ich die organisatorischen Schritte
-                  koordiniere.
-                </p>
-              </div>
-            </div>
+      {/* Bewertungen */}
+      <ReviewCarousel />
 
-            <div>
-              <ul className="space-y-4">
-                {[
-                  "Vermittlung zu Instituten für erforderliche Nachweisverfahren",
-                  "Unterstützung bei der MPU-Terminierung",
-                  "Begleitung bei der Nachweisdokumentation",
-                  "Begutachtungssimulation mit detailliertem Feedback",
-                  "Bereitstellung aller relevanten Materialien und Unterlagen",
-                  "Nachbetreuung und Rückfragen auch nach Abschluss",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <svg className="w-5 h-5 text-secondary mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span className="text-muted">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+      {/* Allgemeine FAQ */}
+      <section className="py-12 md:py-20 bg-background">
+        <div className="max-w-4xl mx-auto px-5 sm:px-6">
+          <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-3">
+            Häufige Fragen
+          </p>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-8">
+            Das sollten Sie wissen
+          </h2>
+          <MpuFaq />
         </div>
       </section>
 
@@ -362,10 +404,25 @@ export default function MpuPage() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             Bereit für den ersten Schritt?
           </h2>
-          <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 md:mb-10">
+          <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6">
             In einem kostenlosen Erstgespräch klären wir Ihre individuelle
             Situation und ich berate Sie zum weiteren Vorgehen — unverbindlich.
           </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm text-white/60 mb-8">
+            {[
+              "15–20 Minuten, telefonisch oder per Video",
+              "Einschätzung Ihrer individuellen Situation",
+              "Klärung der nächsten Schritte",
+              "Unverbindlich und kostenlos",
+            ].map((item, i) => (
+              <span key={i} className="flex items-center gap-1.5">
+                <svg className="w-3.5 h-3.5 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                {item}
+              </span>
+            ))}
+          </div>
           <Link
             href="/contact?subject=mpu"
             className="inline-flex items-center justify-center px-8 py-3.5 bg-secondary text-white font-medium rounded-lg hover:bg-secondary/90 transition-colors duration-200 text-base"
