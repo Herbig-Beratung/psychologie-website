@@ -235,6 +235,7 @@ export default function MpuPage() {
                   "Ersteinschätzung & Ursachenanalyse",
                   "Aufarbeitung der Kernthemen",
                   "Begutachtungssimulation",
+                  "Teilnahmebestätigung zur Vorlage bei der MPU",
                   "Alle Materialien inklusive",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-white/80">
@@ -275,6 +276,7 @@ export default function MpuPage() {
                   "Aufarbeitung & Verhaltensänderung",
                   "Stabilisierungsstrategien",
                   "Begutachtungssimulation mit Feedback",
+                  "Teilnahmebestätigung zur Vorlage bei der MPU",
                   "MPU-Terminierung & Nachbetreuung",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-white/80">
